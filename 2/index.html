@@ -5,9 +5,9 @@
     <title>HTML Academy: Кэт энерджи</title>
     <base href="https://htmlacademy-adaptive.github.io/2005269-cat-energy-26/2/">
 </head>
-  <body class="page__body">
+  <body class="page">
 
-    <header class="page__header">
+    <header class="header">
       <div class="header__logo logo">
         <a class="logo__image" href="">
           <img src="img/svg-images/logo-catenergy.svg" width="34" height="38" alt="Логотип Cat Energy.">
@@ -17,7 +17,7 @@
         </a>
       </div>
       <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <nav class="header__nav">
+      <nav class="header__nav nav">
         <ul class="nav__list" >
           <li class="nav__item">
             <a href="index.html">
@@ -35,31 +35,29 @@
       </nav>
     </header>
 
-    <main class="page__main">
+    <main class="page__main main">
       <div class="main__wrapper">
 
         <section class="description">
-          <h1 class="description-title">Функциональное питание для котов</h1>
+          <h1 class="description__title">Функциональное питание для котов</h1>
           <p class="description__slogan">Занялся собой? Займись котом!</p>
           <img src="img/cat-food.png" width="280" height="270" alt="Питание для котов.">
           <a class="description__choose-programm button" href="form.html">Подобрать программу</a>
         </section>
 
-        <section class="programm programm__weight-loss">
-          <h2 class="programm-title">Похудение</h2>
+        <section class="programm programm-weight-loss">
+          <h2 class="programm__title">Похудение</h2>
           <p class="programm__text">
             Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
           </p>
-          <hr>
           <a class="programm__catalog-button">каталог pro</a>
         </section>
 
-        <section class="programm programm__weight-gain">
+        <section class="programm programm-weight-gain">
           <h2 class="programm__title">Набор массы</h2>
           <p class="programm__text">
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
           </p>
-          <hr>
           <a class="programm__catalog-button">каталог slim</a>
         </section>
 
@@ -88,9 +86,9 @@
         <p class="live-example__expenses">Затраты на питание: 15 000 РУБ.</p>
         <img src="img/live-example-cat.jpg" width="280" height="232" alt="Живой пример кота.">
         <div class="live-example__contrast">
-          <span class="contrast__before">Было</span>
+          <span class="contrast-before">Было</span>
           <input type="range">
-          <span class="contrast__after">Стало</span>
+          <span class="contrast-after">Стало</span>
         </div>
       </section>
 
@@ -103,35 +101,35 @@
 
     </main>
 
-    <footer class="page__footer">
+    <footer class="page__footer footer">
       <a class="footer__logo" href="">
         <img src="img/svg-images/logo-catenergy-title.svg" width="128" height="24" alt="Надпись Cat Energy.">
       </a>
 
-      <hr>
-
+      <section class="socials">
+        <span class="vissually-hidden">Социальные сети</span>
         <ul class="socials__list">
-          <li class="socials__item">
+          <li class="socials__item item">
             <a class="item__vkontakte" href="">
               <img src="img/svg-images/icon-vk.svg" width="28" height="22" alt="Социальная сеть VKontakte.">
             </a>
           </li>
-          <li class="socials__item">
+          <li class="socials__item item">
             <a class="item__youtube" href="">
               <img src="img/svg-images/icon-youtube.svg" width="28" height="22" alt="Видеохостинг Youtube.">
             </a>
           </li>
-          <li class="socials__item">
+          <li class="socials__item item">
             <a class="item__telegram" href="">
               <img src="img/svg-images/icon-tg.svg" width="28" height="22" alt="Мессенджер Telegram.">
             </a>
           </li>
         </ul>
+      </section>
 
-      <hr>
 
       <div class="footer__htmlacademy">
-        <span class="htmlacademy__title">HTML Academy</span>
+        <span class="footer__htmlacademy-title">HTML Academy</span>
         <img src="img/svg-images/htmlacademy-logo.svg" width="27" height="34" alt="Логотип HTMLAcademy.">
       </div>
 
