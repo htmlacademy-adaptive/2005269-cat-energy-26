@@ -1,0 +1,13 @@
+@import "variables.scss";
+
+.button {
+  background-color: $basic-green;
+  cursor: pointer;
+  border: none;
+}
+
+.additional-button {
+  background-color: $basic-gray;
+  cursor: pointer;
+  border: none;
+}

@@ -1,0 +1,11 @@
+@import "variables.scss";
+
+.description {
+  background-image: url("../../img/description-cat.png");
+  background-repeat: no-repeat;
+}
+
+.description__wrapper {
+  background-color: $basic-green;
+  opacity: 0.85;
+}
