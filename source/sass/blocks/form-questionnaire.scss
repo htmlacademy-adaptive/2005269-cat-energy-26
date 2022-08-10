@@ -1,0 +1,23 @@
+@import "variables.scss";
+
+.form-questionnaire__name {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.form-questionnaire__name input {
+  text-transform: uppercase;
+}
+
+.label-radio {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special_dark-grey-2;
+  text-transform: uppercase;
+}

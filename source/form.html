@@ -40,42 +40,42 @@
   <main class="page__main main">
 
     <section class="main-selection">
-      <h1 class="selection-title">Подбор программы</h1>
+      <h1 class="selection-title heading">Подбор программы</h1>
       <p class="selection-subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     </section>
 
     <form class="main-form" action="post">
 
       <div class="form-questionnaire">
-        <label>ИМЯ:*
+        <label class="form-questionnaire__name">ИМЯ:*
           <input type="text" placeholder="барсик">
         </label>
 
-        <label>Вес (кг):*
+        <label class="form-questionnaire__name">Вес (кг):*
           <input type="text" placeholder="7">
         </label>
 
-        <label>Возраст (лет):
+        <label class="form-questionnaire__name">Возраст (лет):
           <input type="text" placeholder="7">
         </label>
 
         <div class="form-questionnaire__choice">
-          <label>
-            <input type="radio">похудение
+          <label class="label-radio">
+            <input class="input-radio" type="radio">похудение
           </label>
 
-          <label>
-            <input type="radio">набор массы
+          <label class="label-radio">
+            <input class="input-radio" type="radio">набор массы
           </label>
 
-          <label>
-            <input type="radio">не знаю (нужен ваш совет)
+          <label class="label-radio">
+            <input class="input-radio" type="radio">не знаю (нужен ваш совет)
           </label>
         </div>
       </div>
 
       <div class="contact-data">
-        <h2 class="contact-data__tile">Контактные данные (владельца кота)</h2>
+        <h2 class="contact-data__title">Контактные данные (владельца кота)</h2>
         <label class="contact-data__label">E-mail:*
           <input type="text" placeholder="kuklachev@gmail.com">
         </label>
@@ -86,28 +86,31 @@
 
       <div class="comment">
         <h2 class="comment__title">Комментарий</h2>
-        <textarea name="comment__text" id="comment__text" cols="30" rows="10"></textarea>
+        <textarea name="comment__text" id="comment__text" cols="30" rows="10">
+          Расскажите обо всех повадках кота
+        </textarea>
       </div>
 
       <div class="additionally">
-        <label>
+        <h2 class="additionally__title">Дополнительно</h2>
+        <label class="label-checkbox">
           <input type="checkbox" checked>сахарозаменитель
         </label>
 
-        <label>
+        <label class="label-checkbox">
           <input type="checkbox">питьевая вода
         </label>
 
-        <label>
+        <label class="label-checkbox">
           <input type="checkbox">молоко
         </label>
 
-        <label>
+        <label class="label-checkbox">
           <input type="checkbox">витамины
         </label>
       </div>
 
-      <button class="submit-button button" type="submit"></button>
+      <button class="submit-button button" type="submit">Отправить заявку</button>
 
       <p class="main-text">* — Обязательные поля</p>
 

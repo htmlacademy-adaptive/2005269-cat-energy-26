@@ -1,0 +1,21 @@
+@import "variables.scss";
+
+.selection-title {
+  line-height: 36px;
+}
+
+.selection-subtitle {
+  font-family: 'Oswald';
+  font-style: normal;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.main-text {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $black;
+}
