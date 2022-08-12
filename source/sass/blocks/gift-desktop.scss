@@ -1,13 +1,12 @@
-.gift {
+.gift-desktop {
   background-image: url("../../img/catalog-cat.png");
   width: 280px;
   height: 290px;
   background-repeat: no-repeat;
-  // margin-top: 35px;
   margin: 35px auto 0 auto;
 }
 
-.gift__wrapper {
+.gift-desktop__wrapper {
   background-color: rgba($basic-green, 0.85);
   width: 280px;
   height: 290px;
@@ -15,7 +14,7 @@
   padding: 59px 0 0 0;
 }
 
-.gift__title {
+.gift-desktop__title {
   font-family: 'Arial';
   font-style: normal;
   font-weight: 400;
@@ -28,23 +27,20 @@
   width: 161px;
 }
 
-.gift__image {
+.gift-desktop__image {
   width: 78px;
   height: 80px;
   margin: 0 auto 48px auto;
   display: block;
 }
 
-@media (min-width: $tablet-width) {
-  .gift {
-    width: 707px;
-    height: 200px;
-    background-image: url("../../img/catalog-cat-tablet.png");
+@media (min-width: $desktop-width) {
+  .gift-desktop {
+    display: inline-block;
   }
 
-  .gift__wrapper {
-    display: flex;
-    width: 707px;
-    height: 200px;
+  .gift-desktop__wrapper {
+    width: 245px;
+    height: 289px;
   }
 }
