@@ -1,22 +1,41 @@
-@import "variables.scss";
-
-.logo__image {
-  height: 38px;
-  margin-right: 57px;
-}
-
-.header {
+.page__header {
+  width: 280px;
   height: 65px;
   display: flex;
   align-items: center;
-}
-
-.logo__title {
-  height: 18px;
+  margin: 0 auto;
 }
 
 .header__logo {
   display: flex;
   align-items: center;
   margin-right: 65px;
+}
+
+@media (min-width: $tablet-width) {
+  .header__toggle {
+    display: none;
+  }
+
+  .header__logo {
+    width: 174px;
+  }
+
+  .page__header {
+    width: 708px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__logo {
+    width: 202px;
+  }
+
+  .page__header {
+    width: 1220px;
+    justify-content: space-between;
+  }
 }

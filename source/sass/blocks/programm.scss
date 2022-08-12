@@ -1,17 +1,22 @@
-@import "variables.scss";
-
 .programm {
   background-color: $basic-gray;
 }
 
 .programm-weight-loss {
   padding: 21px 0 18px 0;
-  margin-top: 20px;
+  margin-top: 200px;
+  width: 280px;
+  margin-right: auto;
+  margin-left: auto;
+
 }
 
 .programm-weight-gain {
   padding: 21px 0 18px 0;
   margin-top: 20px;
+  width: 280px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .programm__title {

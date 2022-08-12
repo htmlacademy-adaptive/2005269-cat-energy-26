@@ -1,4 +1,4 @@
-.show-all-title {
+.show-all__title {
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 400;
@@ -8,11 +8,21 @@
   text-transform: uppercase;
 }
 
-.show-all-subtitle {
+.show-all__subtitle {
   font-family: 'Arial';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   text-align: center;
+}
+
+.show-all {
+  display: flex;
+  flex-direction: column;
+  margin-top: 36px;
+}
+
+.show-all__image {
+  margin: 0 auto;
 }

@@ -1,3 +1,38 @@
 .nav {
   display: none;
+  color: $black;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: $black;
+}
+
+.nav__list {
+  padding: 0;
+  list-style-type: none;
+}
+
+
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+  }
+
+  .nav__list {
+    display: flex;
+  }
+
+  .nav__item:nth-child(1) {
+    margin-right: 34px;
+  }
+
+  .nav__item:nth-child(2) {
+    margin-right: 36px;
+  }
 }
