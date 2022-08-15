@@ -57,6 +57,7 @@
   .additional-products__item {
     display: flex;
     justify-content: space-between;
+    width: 896px;
   }
 
   .additional-product__button {
@@ -69,5 +70,10 @@
 
   .additional-products__list {
     display: inline-block;
+  }
+
+  .additional-products {
+    margin: 0 auto;
+    width: 1220px;
   }
 }

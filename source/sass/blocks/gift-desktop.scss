@@ -4,6 +4,7 @@
   height: 290px;
   background-repeat: no-repeat;
   margin: 35px auto 0 auto;
+  display: none;
 }
 
 .gift-desktop__wrapper {
@@ -34,13 +35,21 @@
   display: block;
 }
 
+@media (min-width: $tablet-width) {
+  .gift-desktop {
+    display: none;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .gift-desktop {
     display: inline-block;
+    width: 245px;
+    margin-left: 263px;
   }
 
   .gift-desktop__wrapper {
-    width: 245px;
     height: 289px;
+    width: 245px;
   }
 }

@@ -1,0 +1,21 @@
+.form-questionnaire__label-radio {
+  display: block;
+}
+
+.form-questionnaire__choice {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .form-questionnaire__label-radio {
+    display: inline-block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-questionnaire__choice {
+    margin-left: 20px;
+  }
+}

@@ -4,10 +4,12 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
+  display: block;
 }
 
 .form-questionnaire__name input {
   text-transform: uppercase;
+  width: 100%;
 }
 
 .label-radio {
@@ -18,4 +20,11 @@
   line-height: 18px;
   color: $special_dark-grey-2;
   text-transform: uppercase;
+}
+
+@media (min-width: $desktop-width) {
+  .form-questionnaire {
+    display: grid;
+    grid-template-columns: 569px 569px;
+  }
 }
