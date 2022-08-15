@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 <body class="page">
 
-  <header class="header">
+  <header class="page__header header">
     <div class="header__logo logo">
       <a class="logo__image" href="">
         <img src="img/svg-images/logo-catenergy.svg" width="34" height="38" alt="Логотип Cat Energy.">
@@ -36,45 +37,45 @@
     </nav>
   </header>
 
-  <main class="page__main">
+  <main class="page__main main">
 
     <section class="main-selection">
-      <h1 class="selection-title">Подбор программы</h1>
+      <h1 class="selection-title heading">Подбор программы</h1>
       <p class="selection-subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     </section>
 
     <form class="main-form" action="post">
 
       <div class="form-questionnaire">
-        <label>ИМЯ:*
+        <label class="form-questionnaire__name">ИМЯ:*
           <input type="text" placeholder="барсик">
         </label>
 
-        <label>Вес (кг):*
+        <label class="form-questionnaire__name">Вес (кг):*
           <input type="text" placeholder="7">
         </label>
 
-        <label>Возраст (лет):
+        <label class="form-questionnaire__name">Возраст (лет):
           <input type="text" placeholder="7">
         </label>
 
         <div class="form-questionnaire__choice">
-          <label>
-            <input type="radio">похудение
+          <label class="label-radio">
+            <input class="input-radio" type="radio">похудение
           </label>
 
-          <label>
-            <input type="radio">набор массы
+          <label class="label-radio">
+            <input class="input-radio" type="radio">набор массы
           </label>
 
-          <label>
-            <input type="radio">не знаю (нужен ваш совет)
+          <label class="label-radio">
+            <input class="input-radio" type="radio">не знаю (нужен ваш совет)
           </label>
         </div>
       </div>
 
       <div class="contact-data">
-        <h2 class="contact-data__tile">Контактные данные (владельца кота)</h2>
+        <h2 class="contact-data__title">Контактные данные (владельца кота)</h2>
         <label class="contact-data__label">E-mail:*
           <input type="text" placeholder="kuklachev@gmail.com">
         </label>
@@ -85,37 +86,42 @@
 
       <div class="comment">
         <h2 class="comment__title">Комментарий</h2>
-        <textarea name="comment__text" id="comment__text" cols="30" rows="10"></textarea>
+        <textarea name="comment__text" id="comment__text" cols="30" rows="10">
+          Расскажите обо всех повадках кота
+        </textarea>
       </div>
 
       <div class="additionally">
-        <label>
+        <h2 class="additionally__title">Дополнительно</h2>
+        <label class="label-checkbox">
           <input type="checkbox" checked>сахарозаменитель
         </label>
 
-        <label>
+        <label class="label-checkbox">
           <input type="checkbox">питьевая вода
         </label>
 
-        <label>
+        <label class="label-checkbox">
           <input type="checkbox">молоко
         </label>
 
-        <label>
+        <label class="label-checkbox">
           <input type="checkbox">витамины
         </label>
       </div>
 
-      <button class="submit-button button" type="submit"></button>
+      <button class="submit-button button" type="submit">Отправить заявку</button>
 
       <p class="main-text">* — Обязательные поля</p>
 
     </form>
 
     <section class="address">
-      <h2 class="address__title">приглашаем к сотрудничеству дилеров!</h2>
-      <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      <div class="address__location"></div>
+      <div class="address__background">
+        <h2 class="address__title">приглашаем к сотрудничеству дилеров!</h2>
+        <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="address__location"></div>
+      </div>
       <!-- <div class="address__location"><div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.322805%2C59.938691&utm_medium=mapframe&utm_source=maps&z=17.24" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUReRxIOD" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div></div> -->
     </section>
   </main>

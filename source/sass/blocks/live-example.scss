@@ -1,0 +1,48 @@
+@import "variables.scss";
+
+.live-example {
+  background-color: $special-gray;
+  padding: 25px 0 40px 0;
+}
+
+.live-example__counter {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+}
+
+.live-example__legend {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.live-example__expenses {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $black;
+}
+
+.contrast-before {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $black;
+}
+
+.contrast-after {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $black;
+}

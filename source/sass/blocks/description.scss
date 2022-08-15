@@ -1,0 +1,30 @@
+@import "variables.scss";
+
+.description {
+  background-image: url("../../img/description-cat.png");
+  background-repeat: no-repeat;
+}
+
+.description__wrapper {
+  background-color: rgba($basic-green, 0.85);
+}
+
+.description__title {
+  color: $white;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.description__slogan {
+  color: $white;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
