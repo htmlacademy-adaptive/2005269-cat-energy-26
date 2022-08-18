@@ -16,4 +16,25 @@
   align-items: center;
   text-transform: uppercase;
   color: $black;
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .additionally__label-checkbox {
+    display: inline-block;
+  }
+
+  .additionally__wrapper {
+    width: 565px;
+    display: grid;
+    grid-template-columns: 282px 221px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additionally__wrapper {
+    width: 1220px;
+    display: grid;
+    grid-template-columns: 221px 221px 221px 221px;
+  }
 }

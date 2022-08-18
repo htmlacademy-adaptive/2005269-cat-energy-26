@@ -1,3 +1,13 @@
+.address {
+  margin: 0 auto;
+  width: 320px;
+  position: relative;
+}
+
+.address__desktop-signature {
+  display: none;
+}
+
 .address__background {
   background-color: $basic-gray;
 }
@@ -10,8 +20,105 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  display: inline-block;
+  width: 139px;
 }
 
 .address__text {
   line-height: 20px;
+  display: inline-block;
+  width: 139px;
+}
+
+.address__iframe {
+  width: 320px;
+  height: 362px;
+  border: none;
+}
+
+.address__location {
+  width: 320px;
+  height: 362px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .address__title {
+    width: 172px;
+    margin-right: 296px;
+  }
+
+  .address__text {
+    width: 160px;
+  }
+
+  .address__location {
+    width: 768px;
+    height: 400px;
+    margin-left: -68px;
+  }
+
+  .address__iframe {
+    width: 768px;
+    height: 400px;
+  }
+
+  .address {
+    margin: 0 auto;
+    width: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .address__location {
+    width: 1440px;
+    margin-left: -110px;
+  }
+
+  .address__iframe {
+    width: 1440px;
+  }
+
+  .address__title {
+    display: none;
+  }
+
+  .address__text {
+    display: none;
+  }
+
+  .address__desktop-signature {
+    width: 565px;
+    height: 198px;
+    display: flex;
+    position: absolute;
+    background-color: white;
+    padding: 56px 80px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    top: 100px;
+  }
+
+  .address__title-desktop {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    width: 163px;
+    height: 84px;
+    margin: 0;
+  }
+
+  .address__text-desktop {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    width: 155px;
+    height: 79px;
+    margin: 0;
+  }
 }

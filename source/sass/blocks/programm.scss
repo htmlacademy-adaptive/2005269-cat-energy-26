@@ -37,3 +37,24 @@
   color: $black;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .programm-weight-loss {
+    margin-top: 490px;
+  }
+
+  .programm {
+    width: 650px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programm {
+    display: inline-block;
+    width: 570px;
+  }
+
+  .programm-weight-loss {
+    margin-right: 74px;
+  }
+}

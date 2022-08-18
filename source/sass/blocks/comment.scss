@@ -15,4 +15,17 @@
   line-height: 18px;
   color: $special_dark-grey;
   text-transform: uppercase;
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .comment__text {
+    width: 614px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comment__text {
+    width: 1220px;
+  }
 }

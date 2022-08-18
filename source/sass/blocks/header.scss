@@ -12,6 +12,10 @@
   margin-right: 65px;
 }
 
+.header__toggle {
+  visibility: hidden;
+}
+
 @media (min-width: $tablet-width) {
   .header__toggle {
     display: none;

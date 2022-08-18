@@ -2,6 +2,10 @@
   display: none;
 }
 
+.description__image-desktop {
+  display: none;
+}
+
 .description {
   background-image: none;
   margin: 0;
@@ -69,10 +73,15 @@
 @media (min-width: $tablet-width){
   .description__title {
     color: $black;
+    text-align: left;
+    width: 341px;
+    font-size: 60px;
+    line-height: 60px;
   }
 
   .description__slogan {
     color: $black;
+    text-align: left;
   }
 
   .description__image {
@@ -81,5 +90,62 @@
 
   .description__image-tablet {
     display: inline-block;
+  }
+
+  .description__choose-programm {
+    margin-top: -500px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description__image-tablet {
+    display: none;
+  }
+
+  .description__image-desktop {
+    position: absolute;
+    display: inline;
+    width: 552px;
+    height: 499px;
+    // left: 39%;
+    top: 141px;
+    z-index: 2;
+    margin-left: 447px;;
+  }
+
+  .description__choose-programm {
+    width: 244px;
+    margin-top: 66px;
+    position: relative;
+  }
+
+  .description__slogan {
+    display: inline-block;
+    width: 284px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .description__background {
+    // background-color: rgba($basic-green, 0.85);
+    background-image: url("../../img/description-cat-desktop.png");
+    background-repeat: no-repeat;
+    // min-width: 720px;
+    width: 50%;
+    height: 694px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+  }
+
+  .description__background-image {
+    // background-image: url("../../images/description-cat.png");
+    background-color: rgba($basic-green, 0.85);
+    min-width: 720px;
+    height: 694px;
+  }
+
+  .description__title {
+    width: 417px;
   }
 }

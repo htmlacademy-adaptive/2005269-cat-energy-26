@@ -1,8 +1,8 @@
-.selection-title {
+.selection__title {
   line-height: 36px;
 }
 
-.selection-subtitle {
+.selection__subtitle {
   font-family: 'Oswald';
   font-style: normal;
   text-transform: uppercase;
@@ -16,4 +16,21 @@
   font-size: 14px;
   line-height: 16px;
   color: $black;
+}
+
+
+.main {
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .main {
+    width: 632px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main {
+    width: 1218px;
+  }
 }

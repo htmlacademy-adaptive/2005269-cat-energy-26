@@ -15,6 +15,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special_dark-grey;
+  display: block;
 }
 
 .contact-data__label input {
@@ -25,4 +26,25 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special_dark-grey;
+}
+
+.contact-data__input-text {
+  width: 100%;
+}
+
+@media (min-width: $desktop-width) {
+  .contact-data__label {
+    display: inline-block;
+  }
+
+  .contact-data__wrapper {
+    display: grid;
+    grid-template-columns: 572px 572px;
+    gap: 78px;
+  }
+
+  .contact-data {
+    // margin: 0 auto;
+    // width: 1218px;
+  }
 }

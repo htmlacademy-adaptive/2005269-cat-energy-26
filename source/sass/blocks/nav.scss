@@ -19,7 +19,7 @@
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .nav {
     display: flex;
   }
@@ -34,5 +34,11 @@
 
   .nav__item:nth-child(2) {
     margin-right: 36px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav__list {
+    z-index: 1;
   }
 }

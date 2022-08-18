@@ -24,8 +24,15 @@
   text-transform: uppercase;
 }
 
+@media (min-width: $tablet-width) {
+  .description__choose-programm {
+    margin-top: -100px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .button {
     width: 100%;
   }
 }
+
