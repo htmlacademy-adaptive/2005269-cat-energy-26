@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>HTML Academy: Кэт энерджи</title>
+  <base href="https://htmlacademy-adaptive.github.io/2005269-cat-energy-26/4/">
+</head>
+<body class="page">
+
+  <header class="page__header header">
+    <div class="header__logo logo">
+      <a class="logo__image" href="">
+        <img class="logo__litle" src="img/svg-images/logo-catenergy.svg" alt="Логотип Cat Energy.">
+        <img class="logo__big" src="img/svg-images/logo-tablet.svg" alt="Логотип Cat Energy.">
+        <img class="logo__very-big" src="img/svg-images/logo-desktop.svg" alt="Логотип Cat Energy.">
+      </a>
+      <a class="logo__title" href="">
+        <img src="img/svg-images/logo-catenergy-title.svg" width="101" height="18" alt="Надпись Cat Energy.">
+      </a>
+    </div>
+    <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <nav class="header__nav nav">
+      <ul class="nav__list" >
+        <li class="nav__item">
+          <a class="nav__link" href="index.html">
+            Главная
+          </a></li>
+        <li class="nav__item">
+          <a class="nav__link" href="catalog.html">
+            Каталог продукции
+          </a></li>
+        <li class="nav__item">
+          <a class="nav__link" href="form.html">
+          Подбор программы
+          </a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page__main main">
+
+    <section class="main__selection selection">
+      <h1 class="selection__title heading">Подбор программы</h1>
+      <p class="selection__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    </section>
+
+    <form class="main__form" action="post">
+      <!-- <div class="form-questionnaire__wrapper"> -->
+        <div class="form-questionnaire">
+          <div class="form-questionnaire__names">
+            <label class="form-questionnaire__name">ИМЯ:*
+              <input class="form-questionnaire__input-text" type="text" placeholder="барсик">
+            </label>
+
+            <label class="form-questionnaire__name">Вес (кг):*
+              <input class="form-questionnaire__input-text" type="text" placeholder="7">
+            </label>
+
+            <label class="form-questionnaire__name">Возраст (лет):
+              <input class="form-questionnaire__input-text" type="text" placeholder="7">
+            </label>
+          </div>
+
+
+          <div class="form-questionnaire__choice">
+            <label class="form-questionnaire__label-radio">
+              <input class="form-questionnaire__input-radio" type="radio">похудение
+            </label>
+
+            <label class="form-questionnaire__label-radio">
+              <input class="form-questionnaire__input-radio" type="radio">набор массы
+            </label>
+
+            <label class="form-questionnaire__label-radio">
+              <input class="form-questionnaire__input-radio" type="radio">не знаю (нужен ваш совет)
+            </label>
+          </div>
+        </div>
+      <!-- </div> -->
+
+
+      <div class="contact-data">
+        <h2 class="contact-data__title">Контактные данные (владельца кота)</h2>
+        <div class="contact-data__wrapper">
+          <label class="contact-data__label">E-mail:*
+            <input class="contact-data__input-text" type="text" placeholder="kuklachev@gmail.com">
+          </label>
+          <label class="contact-data__label">Телефон:*
+            <input class="contact-data__input-text" type="text" placeholder="8 (960) 900-60-90">
+          </label>
+        </div>
+      </div>
+
+      <div class="comment">
+        <h2 class="comment__title">Комментарий</h2>
+                  <!-- cols="30" rows="10" -->
+        <textarea class="comment__text" id="comment__text">
+          Расскажите обо всех повадках кота
+        </textarea>
+      </div>
+
+      <!-- <div class="additionally__wrapper"> -->
+
+
+      <div class="additionally">
+        <h2 class="additionally__title">Дополнительно</h2>
+        <div class="additionally__wrapper">
+          <label class="additionally__label-checkbox">
+            <input type="checkbox" checked>сахарозаменитель
+          </label>
+
+          <label class="additionally__label-checkbox">
+            <input type="checkbox">питьевая вода
+          </label>
+
+          <label class="additionally__label-checkbox">
+            <input type="checkbox">молоко
+          </label>
+
+          <label class="additionally__label-checkbox">
+            <input type="checkbox">витамины
+          </label>
+
+          <button class="submit-button button" type="submit">Отправить заявку</button>
+
+          <p class="main-text">* — Обязательные поля</p>
+        </div>
+      </div>
+
+    <!-- </div> -->
+    </form>
+
+    <section class="address">
+      <div class="address__background">
+        <h2 class="address__title">приглашаем к сотрудничеству дилеров!</h2>
+        <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <!-- <div class="address__location"></div> -->
+      </div>
+      <div class="address__location" style="position: relative; overflow: hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size: 12px; position: absolute; top: 0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.322805%2C59.938691&utm_medium=mapframe&utm_source=maps&z=17.24" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс Карты</a><iframe class="address__iframe" src="https://yandex.ru/map-widget/v1/-/CCUReRxIOD" style="position: relative;"></iframe></div>
+      <div class="address__desktop-signature">
+        <h2 class="address__title-desktop">приглашаем<br> к сотрудничеству дилеров!</h2>
+        <p class="address__text-desktop">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page__footer footer">
+    <a class="footer__logo" href="">
+      <img src="img/svg-images/logo-catenergy-title.svg" width="128" height="24" alt="Надпись Cat Energy.">
+    </a>
+
+    <div class="socials">
+      <span class="visually-hidden">Социальные сети</span>
+      <ul class="socials__list">
+        <li class="socials__item item">
+          <a class="item__vkontakte" href="">
+            <img src="img/svg-images/icon-vk.svg" width="28" height="22" alt="Социальная сеть VKontakte.">
+          </a>
+        </li>
+        <li class="socials__item item">
+          <a class="item__youtube" href="">
+            <img src="img/svg-images/icon-youtube.svg" width="28" height="22" alt="Видеохостинг Youtube.">
+          </a>
+        </li>
+        <li class="socials__item item">
+          <a class="item__telegram" href="">
+            <img src="img/svg-images/icon-tg.svg" width="28" height="22" alt="Мессенджер Telegram.">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="footer__htmlacademy">
+      <span class="footer__htmlacademy-title">HTML Academy</span>
+      <img src="img/svg-images/htmlacademy-logo.svg" width="27" height="34" alt="Логотип HTMLAcademy.">
+    </div>
+
+  </footer>
+
+</body>
+</html>
