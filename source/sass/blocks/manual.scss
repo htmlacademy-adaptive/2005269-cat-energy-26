@@ -1,5 +1,5 @@
 .manual {
-  margin: 20px 0 49px 0;
+  margin: 20px 20px 49px 20px;
 }
 
 .manual__list {
@@ -7,11 +7,26 @@
   list-style: none;
 }
 
+.manual__item {
+  padding-left: 80px;
+  font-size: 14px;
+  line-height: 18px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .manual__list {
     display: grid;
     grid-template-columns: 250px 250px;
     gap: 37px 133px;
+  }
+
+  .manual__title {
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 

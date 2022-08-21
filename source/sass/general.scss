@@ -27,3 +27,29 @@ body {
   line-height: 40px;
   color: $black;
 }
+
+.line-container {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    height: 2px;
+    width: 100vw;
+    background-color: $basic-green;
+    z-index: -1;
+  }
+}
+
+.horizontal-line {
+  border-top: 1px solid #D9D9D9;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .line-container {
+    &::before {
+      top: 21px;
+    }
+  }
+}

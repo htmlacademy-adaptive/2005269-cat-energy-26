@@ -2,6 +2,14 @@
   line-height: 36px;
 }
 
+.main__selection {
+  margin-left: 20px;
+}
+
+.page__main {
+  position: relative;
+}
+
 .selection__subtitle {
   font-family: 'Oswald';
   font-style: normal;
@@ -16,11 +24,6 @@
   font-size: 14px;
   line-height: 16px;
   color: $black;
-}
-
-
-.main {
-  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {

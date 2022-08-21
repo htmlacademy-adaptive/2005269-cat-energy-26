@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   margin: 0 auto;
+  position: relative;
 }
 
 .header__logo {
@@ -12,9 +13,20 @@
   margin-right: 65px;
 }
 
+
 .header__toggle {
-  visibility: hidden;
+  border: none;
+
+  &::before {
+    content: url("../../img/svg-images/toggle-open.svg");
+    position: absolute;
+    top: 22px;
+    right: 5px;
+    width: 24px;
+    height: 16px;
+  }
 }
+
 
 @media (min-width: $tablet-width) {
   .header__toggle {

@@ -3,20 +3,23 @@
 }
 
 .programm-weight-loss {
-  padding: 21px 0 18px 0;
+  box-sizing: border-box;
+  padding: 21px 33px 18px 20px;
   margin-top: 200px;
   width: 280px;
   margin-right: auto;
   margin-left: auto;
-
+  // min-height: 374px;
 }
 
 .programm-weight-gain {
-  padding: 21px 0 18px 0;
+  box-sizing: border-box;
+  padding: 21px 33px 18px 20px;
   margin-top: 20px;
   width: 280px;
   margin-right: auto;
   margin-left: auto;
+  // min-height: 374px;
 }
 
 .programm__title {
@@ -26,6 +29,7 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  padding-left: 69px;
 }
 
 .programm__catalog-button {
@@ -36,6 +40,14 @@
   line-height: 16px;
   color: $black;
   text-transform: uppercase;
+  padding-right: 49px;
+  position: relative;
+
+  &::before {
+    content: url("../../img/svg-images/programm-arrow.svg");
+    position: absolute;
+    right: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -45,6 +57,11 @@
 
   .programm {
     width: 650px;
+  }
+
+  .programm__catalog-button {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 

@@ -1,3 +1,11 @@
+.contact-data {
+  position: relative;
+}
+
+.contact-data__wrapper {
+  margin-left: 20px;
+}
+
 .contact-data__title {
   font-family: 'Oswald';
   font-style: normal;
@@ -5,6 +13,12 @@
   font-size: 24px;
   line-height: 26px;
   color: $black;
+  width: 187px;
+  display: block;
+  background-color: $white;
+  padding-right: 14px;
+  padding-left: 40px;
+  margin-left: -20px;
 }
 
 .contact-data__label {
@@ -15,10 +29,14 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special_dark-grey;
-  display: block;
+  display: flex;
+
+  &:first-child {
+    margin-bottom: 14px;
+  }
 }
 
-.contact-data__label input {
+.contact-data__label input[type="text"] {
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 400;
@@ -26,10 +44,37 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special_dark-grey;
+  border: 1px solid #CDCDCD;
 }
 
 .contact-data__input-text {
   width: 100%;
+  height: 46px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.contact-data__label-text-mail {
+  width: 65px;
+  margin-right: 11px;
+  align-self: center;
+}
+
+.contact-data__label-text-tel {
+  width: 68px;
+  margin-right: 20px;
+  align-self: center;
+}
+
+@media (min-width: $tablet-width) {
+  .contact-data__title {
+    font-size: 36px;
+    line-height: 36px;
+    width: 514px;
+    padding-right: 42px;
+    padding-left: 39px;
+    margin-left: 30px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -41,10 +86,5 @@
     display: grid;
     grid-template-columns: 572px 572px;
     gap: 78px;
-  }
-
-  .contact-data {
-    // margin: 0 auto;
-    // width: 1218px;
   }
 }
