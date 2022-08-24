@@ -30,10 +30,18 @@
   .main {
     width: 632px;
   }
+
+  .main__selection {
+    margin-left: 70px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .main {
     width: 1218px;
+  }
+
+  .main__selection {
+    margin-left: 110px;
   }
 }

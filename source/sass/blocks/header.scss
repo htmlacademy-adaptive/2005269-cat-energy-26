@@ -1,10 +1,12 @@
 .page__header {
-  width: 280px;
+  // width: 280px;
+  // width: 100%;
   height: 65px;
   display: flex;
   align-items: center;
   margin: 0 auto;
   position: relative;
+  justify-content: center;
 }
 
 .header__logo {
@@ -14,16 +16,92 @@
 }
 
 
+// .header__toggle {
+//   border: none;
+//   cursor: pointer;
+
+//   &::before {
+//     // content: url("../../img/svg-images/toggle-open.svg");
+//     content: "";
+//     color: $black;
+//     position: absolute;
+//     top: 22px;
+//     right: 5px;
+//     width: 24px;
+//     height: 16px;
+//     background-color: $black;
+//     box-shadow: 0 8px 0 0 red, 0 16px 0 0 red;
+//   }
+
+//   &--opened {
+//     z-index: 10;
+//     content: "";
+//     position: absolute;
+//     top: 24px;
+//     left: 18px;
+//     width: 36px;
+//     height: 2px;
+//     background-color: $white;
+
+//     &::before {
+//       transform: rotate(45deg);
+//       box-shadow: none;
+//     }
+
+//     &::after {
+//       transform: rotate(-45deg);
+//     }
+//   }
+// }
+
+
 .header__toggle {
+  padding: 0;
+  position: absolute;
+  top: 8px;
+  margin-right: -290px;
+  z-index: 2;
+  display: block;
+  width: 70px;
+  height: 50px;
+  background-color: $white;
   border: none;
 
   &::before {
-    content: url("../../img/svg-images/toggle-open.svg");
+    content: "";
     position: absolute;
-    top: 22px;
-    right: 5px;
-    width: 24px;
-    height: 16px;
+    top: 15px;
+    left: 17px;
+    width: 36px;
+    height: 2px;
+    background-color: $black;
+    box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+  }
+
+  &--opened {
+    z-index: 3;
+    top: 8px;
+    margin-left: -20px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 24px;
+      left: 18px;
+      width: 36px;
+      height: 2px;
+      background-color: $black;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
   }
 }
 

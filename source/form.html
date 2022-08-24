@@ -20,9 +20,11 @@
         <img src="img/svg-images/logo-catenergy-title.svg" width="101" height="18" alt="Надпись Cat Energy.">
       </a>
     </div>
-    <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    <nav class="header__nav nav">
-      <ul class="nav__list" >
+    <button class="header__toggle header__toggle--opened" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <!-- header__toggle--opened -->
+    <nav class="header__nav nav nav-no-js">
+      <!-- nav-opened -->
+      <ul class="nav__list">
         <li class="nav__item">
           <a class="nav__link" href="index.html">
             Главная
@@ -66,11 +68,10 @@
             </label>
           </div>
 
-          <hr class="horizontal-line">
-
           <div class="form-questionnaire__choice">
+            <fieldset class="form-questionnaire__fieldset">
             <label class="form-questionnaire__label-radio">
-              <input class="form-questionnaire__input-radio visually-hidden" name="form-questionnaire__input-radio" type="radio">
+              <input class="form-questionnaire__input-radio visually-hidden" name="form-questionnaire__input-radio" type="radio" checked>
               <span class="form-questionnaire__control"></span>
               <span class="form-questionnaire-text">похудение</span>
             </label>
@@ -86,11 +87,9 @@
               <span class="form-questionnaire__control"></span>
               <span class="form-questionnaire-text">не знаю (нужен ваш совет)</span>
             </label>
+            </fieldset>
           </div>
         </div>
-      <!-- </div> -->
-
-      <hr class="horizontal-line">
 
       <div class="contact-data">
         <div class="line-container">
@@ -100,11 +99,12 @@
           <label class="contact-data__label">
             <span class="contact-data__label-text-mail">E-mail:*</span>
             <input class="contact-data__input-text" type="text" placeholder="kuklachev@gmail.com">
-
+            <svg class="contact-data__mail-svg" width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#222" stroke-width="1.3" d="M1.179 6v8M18.179 6v8M.529 13.35h18M.529 1.35h18M17.88 3.182 9.53 9.677 1.18 3.182V1.65h16.7v1.532Z"/></svg>
           </label>
           <label class="contact-data__label">
             <span class="contact-data__label-text-tel">Телефон:*</span>
             <input class="contact-data__input-text" type="text" placeholder="8 (960) 900-60-90">
+            <svg class="contact-data__tel-svg" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#000"><path d="M17.9 9.753H9.4v1.204h8.5l-2.1 2.107.9.903 3.1-3.11a.754.754 0 0 0 0-.904l-3.1-3.11-.9.903 2.1 2.007ZM8.1 19.787v-6.221a.653.653 0 0 0-.6-.602H3.1a1.226 1.226 0 0 0 1.2 1.204h2.5v5.017H3.1a1.784 1.784 0 0 1-1.728-1.02 1.801 1.801 0 0 1-.172-.686V3.431a1.78 1.78 0 0 1 .483-1.25A1.767 1.767 0 0 1 2.9 1.624h3.9v5.017H4.4a1.218 1.218 0 0 0-1.2 1.204h4.4a.649.649 0 0 0 .6-.602V.923A.863.863 0 0 0 7.5.32H3.1a2.99 2.99 0 0 0-2.151.81A3.01 3.01 0 0 0 0 3.23v13.948a2.91 2.91 0 0 0 .772 2.192 2.89 2.89 0 0 0 2.128.919h4.6a.499.499 0 0 0 .6-.502Z"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(0 .32)" d="M0 0h20v20.069H0z"/></clipPath></defs></svg>
           </label>
         </div>
       </div>
@@ -121,6 +121,8 @@
           <h2 class="additionally__title">Дополнительно</h2>
         </div>
         <div class="additionally__wrapper">
+
+          <div class="additionally__container-checkbox">
           <label class="additionally__label-checkbox">
             <input class="visually-hidden" type="checkbox" checked>
             <span class="additionally-control"></span>
@@ -144,6 +146,7 @@
             <span class="additionally-control"></span>
             <span class="additionally-text">витамины</span>
           </label>
+        </div>
 
           <button class="submit-button button" type="submit">Отправить заявку</button>
 
@@ -157,7 +160,7 @@
     <section class="address">
       <div class="address__background">
         <h2 class="address__title">приглашаем к сотрудничеству дилеров!</h2>
-        <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="address__text">ул. Большая Конюшенная, д. 19/8<br><br class="address__br-tablet"> Санкт-Петербург</p>
       </div>
       <div class="address__location" style="position: relative; overflow: hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size: 12px; position: absolute; top: 0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.322805%2C59.938691&utm_medium=mapframe&utm_source=maps&z=17.24" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс Карты</a><iframe class="address__iframe" src="https://yandex.ru/map-widget/v1/-/CCUReRxIOD" style="position: relative;"></iframe></div>
       <div class="address__desktop-signature">

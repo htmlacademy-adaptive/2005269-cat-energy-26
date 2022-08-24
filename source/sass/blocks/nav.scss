@@ -18,6 +18,33 @@
   list-style-type: none;
 }
 
+@media (max-width: 767px) {
+  .nav-opened {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 54px;
+    z-index: 3;
+    background-color: $white;
+    height: 215px;
+  }
+
+  .nav__item {
+    text-align: center;
+    padding: 22px;
+    // width: 100vw;
+    border-top: 1px solid #E6E6E6;
+
+    &:last-child {
+      border-bottom: 1px solid #E6E6E6;
+    }
+  }
+
+  .nav__link {
+    text-transform: uppercase;
+  }
+}
+
 
 @media (min-width: $tablet-width) {
   .nav {

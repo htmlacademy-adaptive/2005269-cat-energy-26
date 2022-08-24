@@ -39,6 +39,7 @@
 @media (min-width: $tablet-width) {
   .comment__text {
     width: 614px;
+    margin-left: 70px;
   }
 
   .comment__title {
@@ -54,5 +55,6 @@
 @media (min-width: $desktop-width) {
   .comment__text {
     width: 1220px;
+    margin-left: 110px;
   }
 }
