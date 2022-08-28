@@ -1,5 +1,8 @@
 .description__image-tablet {
   display: none;
+  width: 709px;
+  height: 609px;
+  margin-left: -55px;
 }
 
 .description__image-desktop {
@@ -82,7 +85,11 @@
   }
 }
 
-@media (min-width: $tablet-width){
+@media (min-width: $tablet-width) {
+  .description__wrapper {
+    margin-left: 120px;
+  }
+
   .description__title {
     color: $black;
     text-align: left;
@@ -105,9 +112,7 @@
   }
 
   .description__choose-programm {
-    // margin-top: -500px;
-    // margin-bottom: 0;
-    margin: -500px 0 0 0;
+    margin: -586px 0 0 0;
   }
 }
 
@@ -123,7 +128,7 @@
     height: 499px;
     top: 141px;
     z-index: 2;
-    margin-left: 447px;;
+    margin-left: 410px;
   }
 
   .description__choose-programm {
@@ -162,5 +167,9 @@
   .description__title {
     width: 417px;
     padding-top: 111px;
+  }
+
+  .description__wrapper {
+    margin-left: 190px;
   }
 }

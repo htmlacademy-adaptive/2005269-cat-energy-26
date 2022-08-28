@@ -6,6 +6,7 @@ body {
   line-height: 18px;
   color: $special_dark-grey;
   margin: 0;
+  position: relative;
 }
 
 .visually-hidden {
@@ -47,7 +48,7 @@ body {
     top: 15px;
     height: 2px;
     width: 100vw;
-    background-color: #D9D9D9;
+    background-color: $basic-green;
     z-index: -1;
   }
 }
@@ -57,5 +58,15 @@ body {
     &::before {
       top: 21px;
     }
+  }
+
+  .line-container-additionally {
+    &::before {
+      top: 21px;
+    }
+  }
+
+  .item-button {
+    margin: 0 auto;
   }
 }

@@ -3,8 +3,7 @@
   width: 280px;
   height: 290px;
   background-repeat: no-repeat;
-  // margin-top: 35px;
-  margin: 35px auto 0 auto;
+  margin: 35px auto 35px auto;
 }
 
 .gift__wrapper {
@@ -40,11 +39,18 @@
     width: 707px;
     height: 200px;
     background-image: url("../../img/catalog-cat-tablet.png");
+    margin-bottom: 79px;
   }
 
   .gift__wrapper {
     display: flex;
     width: 707px;
     height: 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gift-desktop {
+
   }
 }

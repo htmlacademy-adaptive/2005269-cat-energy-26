@@ -9,6 +9,22 @@
   margin-bottom: 32px;
 }
 
+@media (max-width: $tablet-width) {
+  .page__footer {
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 143px;
+      height: 1px;
+      background-color: rgb(217, 217, 217);
+      width: 100vw;
+      z-index: 1;
+      left: 0;
+      box-shadow: 0 63px 0 0 rgb(217, 217, 217);
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page__footer {
     display: flex;

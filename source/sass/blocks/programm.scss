@@ -3,6 +3,7 @@
 }
 
 .programm-weight-loss {
+  position: relative;
   box-sizing: border-box;
   padding: 21px 33px 18px 20px;
   margin-top: 200px;
@@ -10,9 +11,20 @@
   margin-right: auto;
   margin-left: auto;
   // min-height: 374px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/programm-weight-loss-cat.png");
+    background-size: contain;
+    height: 53px;
+    width: 50px;
+    z-index: 2;
+  }
 }
 
 .programm-weight-gain {
+  position: relative;
   box-sizing: border-box;
   padding: 21px 33px 18px 20px;
   margin-top: 20px;
@@ -20,6 +32,17 @@
   margin-right: auto;
   margin-left: auto;
   // min-height: 374px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/programm-weight-gain-cat.png");
+    background-size: contain;
+    height: 50px;
+    width: 67px;
+    z-index: 2;
+    left: 11px;
+  }
 }
 
 .programm__title {
@@ -30,6 +53,8 @@
   line-height: 37px;
   text-transform: uppercase;
   padding-left: 69px;
+  margin-top: 9px;
+  color: $black;
 }
 
 .programm__catalog-button {
@@ -53,15 +78,46 @@
 @media (min-width: $tablet-width) {
   .programm-weight-loss {
     margin-top: 490px;
+
+    &::before {
+      top: 95px;
+      height: 211px;
+      width: 200px;
+      right: 62px;
+    }
+  }
+
+  .programm-weight-gain {
+    &::before {
+      top: 95px;
+      height: 200px;
+      width: 268px;
+      left: 412px;
+    }
   }
 
   .programm {
-    width: 650px;
+    width: 708px;
+    padding: 77px 0 53px 52px;
   }
 
   .programm__catalog-button {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .programm__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0;
+  }
+
+  .programm__text {
+    font-size: 16px;
+    line-height: 24px;
+    width: 340px;
+    margin-bottom: 48px;
+    color: $black;
   }
 }
 
@@ -73,5 +129,32 @@
 
   .programm-weight-loss {
     margin-right: 74px;
+    margin-left: 110px;
+
+    &::before {
+      width: 100px;
+      height: 106px;
+      left: 52px;
+      top: 41px;
+    }
+  }
+
+  .programm-weight-gain {
+    &::before {
+      width: 134px;
+      height: 100px;
+      left: 30px;
+      top: 41px;
+    }
+  }
+
+  .programm__text {
+    width: 467px;
+  }
+
+  .programm__title {
+    padding-left: 162px;
+    margin-bottom: 73px;
+    margin-top: 0;
   }
 }
