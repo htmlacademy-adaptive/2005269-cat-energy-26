@@ -1,0 +1,32 @@
+.selection-title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.selection-subtitle {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  width: 226px;
+}
+
+@media (min-width: $tablet-width) {
+  .selection-title {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .selection-subtitle {
+    font-size: 20px;
+    line-height: 30px;
+    width: 324px;
+  }
+}

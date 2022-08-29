@@ -1,21 +1,36 @@
-@import "variables.scss";
-
-.selection-title {
+.selection__title {
   line-height: 36px;
 }
 
-.selection-subtitle {
-  font-family: 'Oswald';
+.selection__subtitle {
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   text-transform: uppercase;
   color: $black;
 }
 
 .main-text {
-  font-family: 'Arial';
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: $black;
+}
+
+
+.main {
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .main {
+    width: 632px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main {
+    width: 1218px;
+  }
 }

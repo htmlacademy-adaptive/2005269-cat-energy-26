@@ -1,7 +1,5 @@
-@import "variables.scss";
-
 .button {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -14,6 +12,9 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 280px;
 }
 
 .additional-button {
@@ -21,4 +22,16 @@
   cursor: pointer;
   border: none;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .description__choose-programm {
+    margin-top: -100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    width: 100%;
+  }
 }

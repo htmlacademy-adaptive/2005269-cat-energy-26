@@ -1,7 +1,5 @@
-@import "variables.scss";
-
 .contact-data__title {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -10,7 +8,18 @@
 }
 
 .contact-data__label {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+  display: block;
+}
+
+.contact-data__label input {
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -19,12 +28,23 @@
   color: $special_dark-grey;
 }
 
-.contact-data__label input {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: $special_dark-grey;
+.contact-data__input-text {
+  width: 100%;
+}
+
+@media (min-width: $desktop-width) {
+  .contact-data__label {
+    display: inline-block;
+  }
+
+  .contact-data__wrapper {
+    display: grid;
+    grid-template-columns: 572px 572px;
+    gap: 78px;
+  }
+
+  .contact-data {
+    // margin: 0 auto;
+    // width: 1218px;
+  }
 }

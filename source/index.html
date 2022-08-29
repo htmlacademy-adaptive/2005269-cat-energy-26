@@ -4,13 +4,16 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body class="page">
 
     <header class="page__header header">
       <div class="header__logo logo">
         <a class="logo__image" href="">
-          <img src="img/svg-images/logo-catenergy.svg" width="34" height="38" alt="Логотип Cat Energy.">
+          <img class="logo__litle" src="img/svg-images/logo-catenergy.svg" alt="Логотип Cat Energy.">
+          <img class="logo__big" src="img/svg-images/logo-tablet.svg" alt="Логотип Cat Energy.">
+          <img class="logo__very-big" src="img/svg-images/logo-desktop.svg" alt="Логотип Cat Energy.">
         </a>
         <a class="logo__title" href="">
           <img src="img/svg-images/logo-catenergy-title.svg" width="101" height="18" alt="Надпись Cat Energy.">
@@ -18,19 +21,19 @@
       </div>
       <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <nav class="header__nav nav">
-        <ul class="nav__list" >
+        <ul class="nav__list">
           <li class="nav__item">
-            <a href="index.html">
+            <a class="nav__link" href="index.html">
               Главная
-            </a></li>
+            </a>
           <li class="nav__item">
-            <a href="catalog.html">
+            <a class="nav__link" href="catalog.html">
               Каталог продукции
-            </a></li>
+            </a>
           <li class="nav__item">
-            <a href="form.html">
+            <a class="nav__link" href="form.html">
             Подбор программы
-            </a></li>
+            </a>
         </ul>
       </nav>
     </header>
@@ -42,8 +45,13 @@
           <div class="description__wrapper">
             <h1 class="description__title">Функциональное питание для котов</h1>
             <p class="description__slogan">Занялся собой? Займись котом!</p>
-            <img src="img/cat-food.png" width="280" height="270" alt="Питание для котов.">
+            <img class="description__image" src="img/cat-food.png" alt="Питание для котов.">
+            <img class="description__image-tablet" src="img/cat-food-tablet.png" alt="Питание для котов.">
+            <img class="description__image-desktop" src="img/cat-food-desktop.png" alt="Питание для котов.">
             <a class="description__choose-programm button" href="form.html">Подобрать программу</a>
+            <div class="description__background">
+              <div class="description__background-image"></div>
+            </div>
           </div>
         </section>
 
@@ -75,30 +83,38 @@
       </div>
 
       <section class="live-example">
-        <h2 class="live-example__title heading">Живой пример</h2>
-        <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-        <fieldset class="live-example__kg">
-          <legend class="live-example__legend">снижение веса</legend>
-          <span class="live-example__counter">5 кг</span>
-        </fieldset>
-        <fieldset class="live-example__days">
-          <legend class="live-example__legend">затрачено времени</legend>
-          <span class="live-example__counter">60 дней</span>
-        </fieldset>
-        <p class="live-example__expenses">Затраты на питание: 15 000 РУБ.</p>
-        <img src="img/live-example-cat.jpg" width="280" height="232" alt="Живой пример кота.">
-        <div class="live-example__contrast">
-          <span class="contrast-before">Было</span>
-          <input type="range">
-          <span class="contrast-after">Стало</span>
+        <div class="live-example__wrapper">
+          <h2 class="live-example__title heading">Живой пример</h2>
+          <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+          <div class="live-example__fieldset-wrapper">
+            <fieldset class="live-example__kg">
+              <legend class="live-example__legend">снижение веса</legend>
+              <span class="live-example__counter">5 кг</span>
+            </fieldset>
+            <fieldset class="live-example__days">
+              <legend class="live-example__legend">затрачено времени</legend>
+              <span class="live-example__counter">60 дней</span>
+            </fieldset>
+          </div>
+          <p class="live-example__expenses">Затраты на питание: 15 000 РУБ.</p>
+          <img class="live-example__image" src="img/live-example-cat.jpg" alt="Живой пример кота.">
+          <div class="live-example__contrast">
+            <span class="visually-hidden">Было.</span>
+            <input class="live-example__scroll" type="range">
+            <span class="visually-hidden">Стало.</span>
+          </div>
         </div>
       </section>
 
       <section class="address">
         <h2 class="address__title">приглашаем к сотрудничеству дилеров!</h2>
         <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <div class="address__location"></div>
-        <!-- <div class="address__location" style="position:relative; overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.322805%2C59.938691&utm_medium=mapframe&utm_source=maps&z=17.24" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUReRxIOD" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div> -->
+        <div class="address__location" style="position: relative; overflow: hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size: 12px; position: absolute; top: 0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.322805%2C59.938691&utm_medium=mapframe&utm_source=maps&z=17.24" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс Карты</a><iframe class="address__iframe" src="https://yandex.ru/map-widget/v1/-/CCUReRxIOD" style="position: relative;"></iframe>
+        </div>
+        <div class="address__desktop-signature">
+          <h2 class="address__title-desktop">приглашаем<br> к сотрудничеству дилеров!</h2>
+          <p class="address__text-desktop">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
       </section>
 
     </main>
@@ -108,7 +124,7 @@
         <img src="img/svg-images/logo-catenergy-title.svg" width="128" height="24" alt="Надпись Cat Energy.">
       </a>
 
-      <section class="socials">
+      <div class="socials">
         <span class="visually-hidden">Социальные сети</span>
         <ul class="socials__list">
           <li class="socials__item item">
@@ -127,7 +143,7 @@
             </a>
           </li>
         </ul>
-      </section>
+      </div>
 
 
       <div class="footer__htmlacademy">

@@ -1,7 +1,5 @@
-@import "variables.scss";
-
 .comment__title {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -10,11 +8,24 @@
 }
 
 .comment__text {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: $special_dark-grey;
   text-transform: uppercase;
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .comment__text {
+    width: 614px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comment__text {
+    width: 1220px;
+  }
 }

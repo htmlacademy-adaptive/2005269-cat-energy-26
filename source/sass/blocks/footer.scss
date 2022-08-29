@@ -1,6 +1,29 @@
-@import "variables.scss";
-
-.footer {
+.page__footer {
   background-color: $basic-gray;
-  padding: 39px 0 20px 0;
+  padding: 39px 20px 20px 20px;
+}
+
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+@media (min-width: $tablet-width) {
+  .page__footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__logo {
+    align-items: center;
+    margin-right: 155px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer__logo {
+    margin-right: 412px;
+  }
 }

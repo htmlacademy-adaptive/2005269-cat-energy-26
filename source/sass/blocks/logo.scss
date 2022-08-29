@@ -1,0 +1,45 @@
+.logo__title {
+  height: 18px;
+}
+
+.logo__image {
+  height: 38px;
+  margin-right: 57px;
+}
+
+.logo__big {
+  display: none;
+}
+
+.logo__very-big {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .logo__big {
+    display: inline-block;
+  }
+
+  .logo__litle {
+    display: none;
+  }
+
+  .logo__title {
+    display: none;
+  }
+
+  .logo__image {
+    height: auto;
+    margin-right: 57px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__big {
+    display: none;
+  }
+
+  .logo__very-big {
+    display: inline-block;
+  }
+}

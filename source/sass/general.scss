@@ -1,5 +1,3 @@
-@import "variables.scss";
-
 body {
   font-family: "Arial", sans-serif;
   font-style: normal;
@@ -7,6 +5,7 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
+  margin: 0;
 }
 
 .visually-hidden {
@@ -21,7 +20,7 @@ body {
 }
 
 .heading {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;

@@ -1,30 +1,151 @@
-@import "variables.scss";
+.description__image-tablet {
+  display: none;
+}
+
+.description__image-desktop {
+  display: none;
+}
 
 .description {
-  background-image: url("../../img/description-cat.png");
-  background-repeat: no-repeat;
+  background-image: none;
+  margin: 0;
 }
 
 .description__wrapper {
-  background-color: rgba($basic-green, 0.85);
+  // background-color: rgba($basic-green, 0.85);
+  height: 302px;
+  flex-direction: column;
+  display: flex;
 }
 
 .description__title {
-  color: $white;
-  font-family: 'Oswald';
+  color: $black;
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   text-align: center;
+  margin: 0;
+  padding: 27px 0 0 0;
 }
 
 .description__slogan {
-  color: $white;
-  font-family: 'Oswald';
+  color: $black;
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+.description__image {
+  margin-top: 29px;
+  width: 280px;
+  height: 270px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 320px) {
+  .description__wrapper {
+    background-color: rgba($basic-green, 0.85);
+  }
+
+  .description {
+    background-image: url("../../img/description-cat.png");
+    background-repeat: no-repeat;
+  }
+
+  .description__title {
+    color: $white;
+  }
+
+  .description__slogan {
+    color: $white;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .description__title {
+    color: $black;
+    text-align: left;
+    width: 341px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .description__slogan {
+    color: $black;
+    text-align: left;
+  }
+
+  .description__image {
+    display: none;
+  }
+
+  .description__image-tablet {
+    display: inline-block;
+  }
+
+  .description__choose-programm {
+    margin-top: -500px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description__image-tablet {
+    display: none;
+  }
+
+  .description__image-desktop {
+    position: absolute;
+    display: inline;
+    width: 552px;
+    height: 499px;
+    // left: 39%;
+    top: 141px;
+    z-index: 2;
+    margin-left: 447px;
+  }
+
+  .description__choose-programm {
+    width: 244px;
+    margin-top: 66px;
+    position: relative;
+  }
+
+  .description__slogan {
+    display: inline-block;
+    width: 284px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .description__background {
+    // background-color: rgba($basic-green, 0.85);
+    background-image: url("../../img/description-cat-desktop.png");
+    background-repeat: no-repeat;
+    // min-width: 720px;
+    width: 50%;
+    height: 694px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+  }
+
+  .description__background-image {
+    // background-image: url("../../images/description-cat.png");
+    background-color: rgba($basic-green, 0.85);
+    min-width: 720px;
+    height: 694px;
+  }
+
+  .description__title {
+    width: 417px;
+  }
 }

@@ -1,0 +1,30 @@
+.socials__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 52px;
+  margin-bottom: 21px;
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 26px;
+}
+
+@media (min-width: $tablet-width) {
+  .socials__list {
+    margin: 0;
+  }
+
+  .socials {
+    align-self: center;
+    margin-right: 129px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .socials {
+    margin-right: 385px;
+  }
+}

@@ -12,7 +12,9 @@
   <header class="page__header header">
     <div class="header__logo logo">
       <a class="logo__image" href="">
-        <img src="img/svg-images/logo-catenergy.svg" width="34" height="38" alt="Логотип Cat Energy.">
+        <img class="logo__litle" src="img/svg-images/logo-catenergy.svg" alt="Логотип Cat Energy.">
+        <img class="logo__big" src="img/svg-images/logo-tablet.svg" alt="Логотип Cat Energy.">
+        <img class="logo__very-big" src="img/svg-images/logo-desktop.svg" alt="Логотип Cat Energy.">
       </a>
       <a class="logo__title" href="">
         <img src="img/svg-images/logo-catenergy-title.svg" width="101" height="18" alt="Надпись Cat Energy.">
@@ -22,15 +24,15 @@
     <nav class="header__nav nav">
       <ul class="nav__list" >
         <li class="nav__item">
-          <a href="index.html">
+          <a class="nav__link" href="index.html">
             Главная
           </a></li>
         <li class="nav__item">
-          <a href="catalog.html">
+          <a class="nav__link" href="catalog.html">
             Каталог продукции
           </a></li>
         <li class="nav__item">
-          <a href="form.html">
+          <a class="nav__link" href="form.html">
           Подбор программы
           </a></li>
       </ul>
@@ -39,101 +41,118 @@
 
   <main class="page__main main">
 
-    <section class="main-selection">
-      <h1 class="selection-title heading">Подбор программы</h1>
-      <p class="selection-subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <section class="main__selection selection">
+      <h1 class="selection__title heading">Подбор программы</h1>
+      <p class="selection__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     </section>
 
-    <form class="main-form" action="post">
+    <form class="main__form" action="post">
+      <!-- <div class="form-questionnaire__wrapper"> -->
+        <div class="form-questionnaire">
+          <div class="form-questionnaire__names">
+            <label class="form-questionnaire__name">ИМЯ:*
+              <input class="form-questionnaire__input-text" type="text" placeholder="барсик">
+            </label>
 
-      <div class="form-questionnaire">
-        <label class="form-questionnaire__name">ИМЯ:*
-          <input type="text" placeholder="барсик">
-        </label>
+            <label class="form-questionnaire__name">Вес (кг):*
+              <input class="form-questionnaire__input-text" type="text" placeholder="7">
+            </label>
 
-        <label class="form-questionnaire__name">Вес (кг):*
-          <input type="text" placeholder="7">
-        </label>
+            <label class="form-questionnaire__name">Возраст (лет):
+              <input class="form-questionnaire__input-text" type="text" placeholder="7">
+            </label>
+          </div>
 
-        <label class="form-questionnaire__name">Возраст (лет):
-          <input type="text" placeholder="7">
-        </label>
 
-        <div class="form-questionnaire__choice">
-          <label class="label-radio">
-            <input class="input-radio" type="radio">похудение
+          <div class="form-questionnaire__choice">
+            <label class="form-questionnaire__label-radio">
+              <input class="form-questionnaire__input-radio" type="radio">похудение
+            </label>
+
+            <label class="form-questionnaire__label-radio">
+              <input class="form-questionnaire__input-radio" type="radio">набор массы
+            </label>
+
+            <label class="form-questionnaire__label-radio">
+              <input class="form-questionnaire__input-radio" type="radio">не знаю (нужен ваш совет)
+            </label>
+          </div>
+        </div>
+      <!-- </div> -->
+
+
+      <div class="contact-data">
+        <h2 class="contact-data__title">Контактные данные (владельца кота)</h2>
+        <div class="contact-data__wrapper">
+          <label class="contact-data__label">E-mail:*
+            <input class="contact-data__input-text" type="text" placeholder="kuklachev@gmail.com">
           </label>
-
-          <label class="label-radio">
-            <input class="input-radio" type="radio">набор массы
-          </label>
-
-          <label class="label-radio">
-            <input class="input-radio" type="radio">не знаю (нужен ваш совет)
+          <label class="contact-data__label">Телефон:*
+            <input class="contact-data__input-text" type="text" placeholder="8 (960) 900-60-90">
           </label>
         </div>
       </div>
 
-      <div class="contact-data">
-        <h2 class="contact-data__title">Контактные данные (владельца кота)</h2>
-        <label class="contact-data__label">E-mail:*
-          <input type="text" placeholder="kuklachev@gmail.com">
-        </label>
-        <label class="contact-data__label">Телефон:*
-          <input type="text" placeholder="8 (960) 900-60-90">
-        </label>
-      </div>
-
       <div class="comment">
         <h2 class="comment__title">Комментарий</h2>
-        <textarea name="comment__text" id="comment__text" cols="30" rows="10">
+                  <!-- cols="30" rows="10" -->
+        <textarea class="comment__text" id="comment__text">
           Расскажите обо всех повадках кота
         </textarea>
       </div>
 
+      <!-- <div class="additionally__wrapper"> -->
+
+
       <div class="additionally">
         <h2 class="additionally__title">Дополнительно</h2>
-        <label class="label-checkbox">
-          <input type="checkbox" checked>сахарозаменитель
-        </label>
+        <div class="additionally__wrapper">
+          <label class="additionally__label-checkbox">
+            <input type="checkbox" checked>сахарозаменитель
+          </label>
 
-        <label class="label-checkbox">
-          <input type="checkbox">питьевая вода
-        </label>
+          <label class="additionally__label-checkbox">
+            <input type="checkbox">питьевая вода
+          </label>
 
-        <label class="label-checkbox">
-          <input type="checkbox">молоко
-        </label>
+          <label class="additionally__label-checkbox">
+            <input type="checkbox">молоко
+          </label>
 
-        <label class="label-checkbox">
-          <input type="checkbox">витамины
-        </label>
+          <label class="additionally__label-checkbox">
+            <input type="checkbox">витамины
+          </label>
+
+          <button class="submit-button button" type="submit">Отправить заявку</button>
+
+          <p class="main-text">* — Обязательные поля</p>
+        </div>
       </div>
 
-      <button class="submit-button button" type="submit">Отправить заявку</button>
-
-      <p class="main-text">* — Обязательные поля</p>
-
+    <!-- </div> -->
     </form>
 
     <section class="address">
       <div class="address__background">
         <h2 class="address__title">приглашаем к сотрудничеству дилеров!</h2>
         <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <div class="address__location"></div>
+        <!-- <div class="address__location"></div> -->
       </div>
-      <!-- <div class="address__location"><div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.322805%2C59.938691&utm_medium=mapframe&utm_source=maps&z=17.24" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUReRxIOD" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div></div> -->
+      <div class="address__location" style="position: relative; overflow: hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size: 12px; position: absolute; top: 0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.322805%2C59.938691&utm_medium=mapframe&utm_source=maps&z=17.24" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс Карты</a><iframe class="address__iframe" src="https://yandex.ru/map-widget/v1/-/CCUReRxIOD" style="position: relative;"></iframe></div>
+      <div class="address__desktop-signature">
+        <h2 class="address__title-desktop">приглашаем<br> к сотрудничеству дилеров!</h2>
+        <p class="address__text-desktop">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
     </section>
   </main>
-
 
   <footer class="page__footer footer">
     <a class="footer__logo" href="">
       <img src="img/svg-images/logo-catenergy-title.svg" width="128" height="24" alt="Надпись Cat Energy.">
     </a>
 
-    <section class="socials">
-      <span class="vissually-hidden">Социальные сети</span>
+    <div class="socials">
+      <span class="visually-hidden">Социальные сети</span>
       <ul class="socials__list">
         <li class="socials__item item">
           <a class="item__vkontakte" href="">
@@ -151,7 +170,7 @@
           </a>
         </li>
       </ul>
-    </section>
+    </div>
 
 
     <div class="footer__htmlacademy">
