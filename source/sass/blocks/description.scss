@@ -20,7 +20,7 @@
 
 .description__title {
   color: $black;
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -32,7 +32,7 @@
 
 .description__slogan {
   color: $black;
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -70,7 +70,7 @@
   }
 }
 
-@media (min-width: $tablet-width){
+@media (min-width: $tablet-width) {
   .description__title {
     color: $black;
     text-align: left;
@@ -110,7 +110,7 @@
     // left: 39%;
     top: 141px;
     z-index: 2;
-    margin-left: 447px;;
+    margin-left: 447px;
   }
 
   .description__choose-programm {
