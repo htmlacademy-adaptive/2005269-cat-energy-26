@@ -9,6 +9,17 @@
   margin-bottom: 32px;
 }
 
+.footer__htmlacademy {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 43px;
+}
+
+.footer__htmlacademy-title {
+  align-self: center;
+}
+
 @media (max-width: $tablet-width) {
   .page__footer {
     &::before {
@@ -35,6 +46,15 @@
     align-items: center;
     margin-right: 155px;
     margin-bottom: 0;
+  }
+
+  .footer__htmlacademy {
+    align-self: center;
+    margin-top: 0;
+  }
+
+  .footer__htmlacademy-title {
+    margin-right: 22px;
   }
 }
 
