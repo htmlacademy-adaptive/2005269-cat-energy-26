@@ -20,7 +20,7 @@ body {
 }
 
 .heading {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -29,7 +29,7 @@ body {
 }
 
 .button {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -93,7 +93,7 @@ body {
   font-display: swap;
 }
 .additional-products__title {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -102,7 +102,7 @@ body {
 }
 
 .additional-product__title {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -112,7 +112,7 @@ body {
 }
 
 .additional-product__name {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -165,7 +165,7 @@ body {
   }
 }
 .additionally__title {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -174,7 +174,7 @@ body {
 }
 
 .additionally__label-checkbox {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -219,7 +219,7 @@ body {
 
 .address__title {
   color: #111111;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -295,7 +295,7 @@ body {
     height: 198px;
     display: flex;
     position: absolute;
-    background-color: white;
+    background-color: #ffffff;
     padding: 56px 80px;
     box-sizing: border-box;
     justify-content: space-between;
@@ -303,7 +303,7 @@ body {
   }
 
   .address__title-desktop {
-    font-family: "Oswald";
+    font-family: "Oswald", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -315,7 +315,7 @@ body {
   }
 
   .address__text-desktop {
-    font-family: "Arial";
+    font-family: "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -326,7 +326,7 @@ body {
   }
 }
 .show-all__title {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -336,7 +336,7 @@ body {
 }
 
 .show-all__subtitle {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -360,7 +360,7 @@ body {
 }
 
 .catalog__title {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -373,7 +373,7 @@ body {
   display: inline-block;
   align-items: center;
   text-transform: uppercase;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -382,7 +382,7 @@ body {
 }
 
 .item-subtitle__text {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -444,7 +444,7 @@ body {
   }
 }
 .comment__title {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -453,7 +453,7 @@ body {
 }
 
 .comment__text {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -474,7 +474,7 @@ body {
   }
 }
 .contact-data__title {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -483,7 +483,7 @@ body {
 }
 
 .contact-data__label {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -494,7 +494,7 @@ body {
 }
 
 .contact-data__label input {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -539,7 +539,7 @@ body {
 
 .description__title {
   color: #000000;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -551,7 +551,7 @@ body {
 
 .description__slogan {
   color: #000000;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -732,7 +732,7 @@ body {
   }
 }
 .form-questionnaire__name {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -746,7 +746,7 @@ body {
 }
 
 .label-radio {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -779,7 +779,7 @@ body {
 }
 
 .gift-desktop__title {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -832,7 +832,7 @@ body {
 }
 
 .gift__title {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -942,7 +942,7 @@ body {
 }
 
 .live-example__counter {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -957,7 +957,7 @@ body {
 }
 
 .live-example__expenses {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1063,14 +1063,14 @@ body {
 }
 
 .selection__subtitle {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   text-transform: uppercase;
   color: #000000;
 }
 
 .main-text {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1118,7 +1118,7 @@ body {
 .nav {
   display: none;
   color: #000000;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -1187,7 +1187,7 @@ body {
 }
 
 .programm__catalog-button {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1216,7 +1216,7 @@ body {
   }
 }
 .selection-title {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -1224,7 +1224,7 @@ body {
 }
 
 .selection-subtitle {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1234,7 +1234,7 @@ body {
 
 @media (min-width: 768px) {
   .selection-title {
-    font-family: "Oswald";
+    font-family: "Oswald", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 60px;
