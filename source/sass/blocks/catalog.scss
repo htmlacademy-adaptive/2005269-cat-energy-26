@@ -176,13 +176,18 @@
     &::before {
       display: none;
     }
+
+    &:nth-of-type(odd) .catalog__image{
+      width: 161px;
+      height: 171px;
+      margin-top: -26px;
+    }
   }
 
   .catalog__image {
     width: 168px;
     height: 200px;
     margin-top: -54px;
-
   }
 
   .catalog__list {
