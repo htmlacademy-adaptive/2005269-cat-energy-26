@@ -1,3 +1,14 @@
+.form-questionnaire__choice {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+
 .form-questionnaire__input-radio:checked + .form-questionnaire__control {
   &::before {
     position: absolute;
@@ -12,7 +23,7 @@
 }
 
 .form-questionnaire__name {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -26,6 +37,7 @@
 
 .form-questionnaire__label-radio {
   position: relative;
+  display: block;
 
   &:not(:last-child) {
     margin-bottom: 20px;
@@ -50,9 +62,9 @@
 }
 
 .form-questionnaire__input-text {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
   height: 46px;
   font-size: 16px;
   line-height: 18px;
@@ -60,7 +72,7 @@
 }
 
 .label-radio {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -83,7 +95,7 @@
 }
 
 .form-questionnaire-text {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -96,7 +108,7 @@
 .form-questionnaire__control {
   width: 30px;
   height: 30px;
-  border: 1px solid #CDCDCD;
+  border: 1px solid $special-grey;
   box-sizing: border-box;
   position: absolute;
   top: -6px;
@@ -106,9 +118,8 @@
 @media (max-width: 767px) {
   .form-questionnaire__fieldset {
     margin-left: -20px;
-    border: 1px solid #D9D9D9;
+    border: 1px solid #d9d9d9;
     width: 97vw;
-    // padding: 27px 0 25px 0;
     padding-top: 27px;
     padding-bottom: 25px;
   }
@@ -120,14 +131,9 @@
   }
 
   .form-questionnaire__fieldset {
-    border: 1px solid #D9D9D9;
+    border: 1px solid #d9d9d9;
     padding-top: 30px;
     padding-bottom: 30px;
-    // min-height: 200px;
-  }
-
-  .form-questionnaire__label-radio {
-    display: block;
   }
 }
 
@@ -140,5 +146,6 @@
 
   .form-questionnaire__choice {
     padding-top: 0;
+    margin-left: 20px;
   }
 }

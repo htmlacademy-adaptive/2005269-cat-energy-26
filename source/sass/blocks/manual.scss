@@ -104,12 +104,12 @@
       top: -35px;
       counter-increment: manual-counter;
       position: absolute;
-      font-family: 'Oswald';
+      font-family: "Oswald", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 280px;
       line-height: 280px;
-      color: #F2F2F2;
+      color: $basic-gray;
       width: 120px;
       content: counter(manual-counter);
       z-index: -1;

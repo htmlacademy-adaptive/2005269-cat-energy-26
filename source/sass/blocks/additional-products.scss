@@ -8,7 +8,7 @@
 }
 
 .additional-products__title {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -20,7 +20,7 @@
 }
 
 .additional-product__title {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -30,7 +30,7 @@
 }
 
 .additional-product__name {
-  font-family: 'Arial';
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -61,10 +61,10 @@
     position: absolute;
     top: 56px;
     height: 1px;
-    background-color: #CDCDCD;
+    background-color: $special-grey;
     width: 280px;
     z-index: 1;
-    box-shadow: 0 145px 0 0 #CDCDCD, 0 290px 0 0 #CDCDCD, 0 435px 0 0 #CDCDCD;
+    box-shadow: 0 145px 0 0 $special-grey, 0 290px 0 0 $special-grey, 0 435px 0 0 $special-grey;
   }
 }
 
@@ -73,12 +73,16 @@
     &:not(:last-child) {
       margin-bottom: 0;
     }
+
+    &::before {
+      display: none;
+    }
+    padding: 27px 38px;
+    border: 1px solid $special-grey;
   }
 
   .additional-products__list {
     width: 708px;
-    // border: 1px solid #CDCDCD;
-    // padding: 27px 38px;
   }
 
   .additional-product__button {
@@ -88,7 +92,7 @@
   .additional-products__title {
     margin-left: 60px;
     padding: 0 37px 0 33px;
-    font-family: 'Oswald';
+    font-family: "Oswald", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
@@ -107,14 +111,6 @@
     width: 217px;
     justify-content: space-between;
     text-align: right;
-  }
-
-  .additional-products__item {
-    &::before {
-      display: none;
-    }
-    padding: 27px 38px;
-    border: 1px solid #CDCDCD;
   }
 
   .additional-product__name {
@@ -136,9 +132,9 @@
     width: 244px;
   }
 
-  .gift {
-    display: none;
-  }
+  // .gift {
+  //   display: none;
+  // }
 
   .additional-products__list {
     display: inline-block;
@@ -164,5 +160,9 @@
     width: 132px;
     margin-right: 43px;
     display: inline-block;
+  }
+
+  .additional-wrapper {
+    display: flex;
   }
 }

@@ -8,7 +8,7 @@
 }
 
 .contact-data__title {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -24,7 +24,7 @@
 
 .contact-data__label {
   position: relative;
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -39,14 +39,14 @@
 }
 
 .contact-data__label input[type="text"] {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: $special_dark-grey;
-  border: 1px solid #CDCDCD;
+  border: 1px solid $special-grey;
 }
 
 .contact-data__input-text {

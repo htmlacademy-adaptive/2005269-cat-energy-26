@@ -16,7 +16,7 @@
 
 .address__title {
   color: $special-black;
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -113,7 +113,7 @@
     height: 198px;
     display: flex;
     position: absolute;
-    background-color: white;
+    background-color: $white;
     padding: 56px 80px;
     box-sizing: border-box;
     justify-content: space-between;
@@ -122,7 +122,7 @@
   }
 
   .address__title-desktop {
-    font-family: 'Oswald';
+    font-family: "Oswald", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -134,7 +134,7 @@
   }
 
   .address__text-desktop {
-    font-family: 'Arial';
+    font-family: "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -143,4 +143,8 @@
     height: 79px;
     margin: 0;
   }
+}
+
+.address__background--index {
+  background-color: $white;
 }

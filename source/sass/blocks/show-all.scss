@@ -1,5 +1,5 @@
 .show-all__title {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -12,17 +12,14 @@
   &::before {
     content: "";
     position: absolute;
-    // top: 185px;
     height: 1px;
-    background-color: #EBEDED;
-    // width: 100vw;
+    background-color: $gray-line;
     z-index: -1;
-    // left: -100px;
   }
 }
 
 .show-all__subtitle {
-  font-family: 'Arial';
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -77,7 +74,7 @@
   }
 
   .show-all {
-    border: 2px solid #F2F2F2;
+    border: 2px solid $basic-gray;
     margin: 0;
     padding: 70px 0 50px 0;
   }

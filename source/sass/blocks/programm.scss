@@ -10,7 +10,6 @@
   width: 280px;
   margin-right: auto;
   margin-left: auto;
-  // min-height: 374px;
 
   &::before {
     position: absolute;
@@ -31,7 +30,6 @@
   width: 280px;
   margin-right: auto;
   margin-left: auto;
-  // min-height: 374px;
 
   &::before {
     position: absolute;
@@ -58,7 +56,7 @@
 }
 
 .programm__catalog-button {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

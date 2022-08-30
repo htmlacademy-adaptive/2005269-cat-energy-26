@@ -15,7 +15,7 @@
 }
 
 .gift__title {
-  font-family: 'Arial';
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -52,5 +52,16 @@
 @media (min-width: $desktop-width) {
   .gift {
     display: flex;
+    width: 245px;
+    height: auto;
+    background-image: url("../../img/catalog-cat.png");
+    box-sizing: border-box;
+    margin: 50px auto 35px auto;
+  }
+
+  .gift__wrapper {
+    flex-direction: column;
+    height: 290px;
+    box-sizing: border-box;
   }
 }

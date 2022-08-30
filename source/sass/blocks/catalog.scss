@@ -9,7 +9,7 @@
 }
 
 .catalog__title {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -22,7 +22,7 @@
     position: absolute;
     top: -27px;
     height: 1px;
-    background-color: #EBEDED;
+    background-color: $gray-line;
     width: 100%;
     z-index: -1;
     left: 0;
@@ -33,7 +33,7 @@
     position: absolute;
     top: 85px;
     height: 1px;
-    background-color: #EBEDED;
+    background-color: $gray-line;
     width: 100%;
     z-index: -1;
     left: 0;
@@ -41,7 +41,7 @@
 }
 
 .item-subtitle__text {
-  font-family: 'Arial';
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -50,7 +50,7 @@
 }
 
 .catalog__table-row {
-  font-family: 'Arial';
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -62,7 +62,7 @@
   display: block;
   align-items: center;
   text-transform: uppercase;
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -97,17 +97,16 @@
 }
 
 .catalog__item {
-  // position: relative;
   &::before {
     content: "";
     position: absolute;
     top: 209px;
     height: 1px;
-    background-color: #EBEDED;
+    background-color: $gray-line;
     width: 100%;
     z-index: -1;
     left: 0;
-    box-shadow: 0 215px 0 0 #EBEDED, 0 430px 0 0 #EBEDED, 0 645px 0 0 #EBEDED, 0 860px 0 0 #EBEDED, 0 1075px 0 0 #EBEDED, 0 1290px 0 0 #EBEDED;
+    box-shadow: 0 215px 0 0 $gray-line, 0 430px 0 0 $gray-line, 0 645px 0 0 $gray-line, 0 860px 0 0 $gray-line, 0 1075px 0 0 $gray-line, 0 1290px 0 0 $gray-line;
   }
 }
 
@@ -146,7 +145,7 @@
   }
 
   .catalog__table-row {
-    font-family: 'Arial';
+    font-family: "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     // font-size: 16px;
@@ -157,11 +156,11 @@
       position: absolute;
       top: 37px;
       height: 1px;
-      background-color: #EBEDED;
+      background-color: $gray-line;
       width: 250px;
       z-index: 3;
       left: 0;
-      box-shadow: 0 32px 0 0 #EBEDED, 0 64px 0 0 #EBEDED;
+      box-shadow: 0 32px 0 0 $gray-line, 0 64px 0 0 $gray-line;
     }
   }
 
@@ -170,14 +169,14 @@
     margin: 0;
     flex-direction: column;
     display: flex;
-    background: #F2F2F2;
+    background: $basic-gray;
     min-height: 430px;
 
     &::before {
       display: none;
     }
 
-    &:nth-of-type(odd) .catalog__image{
+    &:nth-of-type(odd) .catalog__image {
       width: 161px;
       height: 171px;
       margin-top: -26px;
