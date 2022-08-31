@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="manifest" href="manifest.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body class="page">
@@ -47,9 +49,14 @@
           <div class="description__wrapper">
             <h1 class="description__title">Функциональное питание для котов</h1>
             <p class="description__slogan">Занялся собой? Займись котом!</p>
-            <img class="description__image" src="img/cat-food.png" alt="Питание для котов.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/cat-food-desktop.png">
+              <source media="(min-width: 768px)" srcset="img/cat-food-tablet.png">
+              <img class="description__image" src="img/cat-food.png" alt="Питание для котов.">
+            </picture>
+            <!-- <img class="description__image" src="img/cat-food.png" alt="Питание для котов.">
             <img class="description__image-tablet" src="img/cat-food-tablet.png" alt="Питание для котов.">
-            <img class="description__image-desktop" src="img/cat-food-desktop.png" alt="Питание для котов.">
+            <img class="description__image-desktop" src="img/cat-food-desktop.png" alt="Питание для котов."> -->
             <a class="description__choose-programm button" href="form.html">Подобрать программу</a>
             <div class="description__background">
               <div class="description__background-image"></div>

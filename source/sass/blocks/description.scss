@@ -1,8 +1,8 @@
 .description__image-tablet {
   display: none;
-  width: 709px;
-  height: 609px;
-  margin-left: -55px;
+  // width: 709px;
+  // height: 609px;
+  // margin-left: -55px;
 }
 
 .description__image-desktop {
@@ -52,6 +52,7 @@
 }
 
 .description__image {
+  display: flex;
   margin-top: 29px;
   width: 280px;
   height: 270px;
@@ -104,7 +105,10 @@
   }
 
   .description__image {
-    display: none;
+    width: 709px;
+    height: 609px;
+    margin-left: -55px;
+    display: inline-block;
   }
 
   .description__image-tablet {
@@ -171,5 +175,15 @@
 
   .description__wrapper {
     margin-left: 190px;
+  }
+
+  .description__image {
+    position: absolute;
+    display: inline;
+    width: 552px;
+    height: 499px;
+    top: 141px;
+    z-index: 2;
+    margin-left: 410px;
   }
 }
