@@ -1,3 +1,35 @@
+.additionally {
+  position: relative;
+}
+
+.additionally__wrapper {
+  margin-left: 20px;
+  margin-top: 34px;
+}
+
+.additionally-text {
+  padding-left: 46px;
+  padding-top: 5px;
+  padding-bottom: 7px;
+
+  &:not(:last-child) {
+    margin-bottom: 27px;
+  }
+}
+
+.additionally__main-text {
+  margin: 21px 0 0 0;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  width: 280px;
+  margin-bottom: 32px;
+}
+
 .additionally__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -5,6 +37,12 @@
   font-size: 24px;
   line-height: 26px;
   color: $black;
+  display: block;
+  background-color: $white;
+  width: 141px;
+  padding-right: 23px;
+  padding-left: 40px;
+  margin-left: -20px;
 }
 
 .additionally__label-checkbox {
@@ -17,6 +55,35 @@
   text-transform: uppercase;
   color: $black;
   display: block;
+  position: relative;
+  height: 30px;
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  &:last-child {
+    margin-bottom: 34px;
+  }
+}
+
+.additionally-control {
+  width: 30px;
+  height: 30px;
+  border: 1px solid $special-grey;
+  box-sizing: border-box;
+  position: absolute;
+  top: -6px;
+}
+
+.additionally__label-checkbox input:checked + .additionally-control {
+  &::before {
+    content: url("../../img/svg-images/checkmark.svg");
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    z-index: 4;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -24,17 +91,42 @@
     display: inline-block;
   }
 
-  .additionally__wrapper {
-    width: 565px;
+  .additionally__container-checkbox {
     display: grid;
-    grid-template-columns: 282px 221px;
+    grid-template-columns: 221px 221px;
+    column-gap: 123px;
+    row-gap: 14px;
+  }
+
+  .additionally__wrapper {
+    margin-bottom: 72px;
+    margin-left: 70px;
+  }
+
+  .additionally__title {
+    font-size: 36px;
+    line-height: 36px;
+    width: 211px;
+    padding-right: 41px;
+    padding-left: 39px;
+    margin-left: 30px;
+  }
+
+  .additionally__main-text {
+    display: inline;
   }
 }
 
 @media (min-width: $desktop-width) {
   .additionally__wrapper {
     width: 1220px;
-    display: grid;
+    // display: grid;
+    // grid-template-columns: 244px 244px 244px 244px;
+    // gap: 61px 80px;
+    margin-left: 110px;
+  }
+
+  .additionally__container-checkbox {
     grid-template-columns: 221px 221px 221px 221px;
   }
 }

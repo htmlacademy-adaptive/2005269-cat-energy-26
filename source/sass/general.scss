@@ -6,6 +6,7 @@ body {
   line-height: 18px;
   color: $special_dark-grey;
   margin: 0;
+  position: relative;
 }
 
 .visually-hidden {
@@ -26,4 +27,46 @@ body {
   font-size: 36px;
   line-height: 40px;
   color: $black;
+}
+
+.line-container {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    height: 2px;
+    width: 100vw;
+    background-color: $basic-green;
+    z-index: -1;
+  }
+}
+
+.line-container-additionally {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    height: 2px;
+    width: 100vw;
+    background-color: $basic-green;
+    z-index: -1;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .line-container {
+    &::before {
+      top: 21px;
+    }
+  }
+
+  .line-container-additionally {
+    &::before {
+      top: 21px;
+    }
+  }
+
+  .item-button {
+    margin: 0 auto;
+  }
 }

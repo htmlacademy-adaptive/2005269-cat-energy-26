@@ -4,15 +4,18 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  display: block;
+  margin-left: 20px;
 }
 
-.selection-subtitle {
+.selection__subtitle {
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   width: 226px;
+  margin: 0 0 39px 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -24,9 +27,10 @@
     line-height: 60px;
   }
 
-  .selection-subtitle {
+  .selection__subtitle {
     font-size: 20px;
     line-height: 30px;
     width: 324px;
+    margin-bottom: 66px;
   }
 }

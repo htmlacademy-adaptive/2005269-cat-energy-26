@@ -1,17 +1,127 @@
 .manual {
-  margin: 20px 0 49px 0;
+  margin: 20px 20px 49px 20px;
+  width: 279px;
+  position: relative;
 }
 
 .manual__list {
   padding: 0;
   list-style: none;
+  width: 279px;
+}
+
+.manual__icon {
+  position: absolute;
+  z-index: 2;
+  left: 15px;
+  top: 14px;
+}
+
+.manual__item {
+  padding-top: 3px;
+  position: relative;
+  padding-left: 80px;
+  font-size: 14px;
+  line-height: 18px;
+  width: 279px;
+  box-sizing: border-box;
+  height: 60px;
+  align-self: center;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: $basic-green;
+    width: 60px;
+    height: 60px;
+  }
+
+  &:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: $basic-green;
+    width: 60px;
+    height: 60px;
+  }
+
+  &:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: $basic-green;
+    width: 60px;
+    height: 60px;
+  }
+
+  &:nth-child(4)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: $basic-green;
+    width: 60px;
+    height: 60px;
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .manual {
+    width: auto;
+  }
+
   .manual__list {
     display: grid;
     grid-template-columns: 250px 250px;
-    gap: 37px 133px;
+    gap: 76px 133px;
+    counter-reset: manual-counter;
+    width: auto;
+    justify-content: center;
+  }
+
+  .manual__title {
+    font-size: 60px;
+    line-height: 60px;
+    width: 375px;
+  }
+
+  .manual__item {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+    height: 240px;
+    padding: 0;
+
+    &::before {
+      top: -35px;
+      counter-increment: manual-counter;
+      position: absolute;
+      font-family: "Oswald", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 280px;
+      color: $basic-gray;
+      width: 120px;
+      content: counter(manual-counter);
+      z-index: -1;
+      right: 0;
+    }
+  }
+
+  .manual__text {
+    margin-top: 111px;
+    display: block;
+    margin-bottom: 251px;
+    width: 245px;
   }
 }
 
@@ -19,6 +129,7 @@
   .manual__list {
     display: grid;
     grid-template-columns: 230px 246px 248px 250px;
-    gap: 83px;
+    gap: 102px;
+    justify-content: center;
   }
 }

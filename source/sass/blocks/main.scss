@@ -2,6 +2,14 @@
   line-height: 36px;
 }
 
+.main__selection {
+  margin-left: 20px;
+}
+
+.page__main {
+  position: relative;
+}
+
 .selection__subtitle {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -18,19 +26,14 @@
   color: $black;
 }
 
-
-.main {
-  margin: 0 auto;
-}
-
 @media (min-width: $tablet-width) {
-  .main {
-    width: 632px;
+  .main__selection {
+    margin-left: 70px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .main {
-    width: 1218px;
+  .main__selection {
+    margin-left: 110px;
   }
 }

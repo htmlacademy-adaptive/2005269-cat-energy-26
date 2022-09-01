@@ -1,9 +1,16 @@
 .description__image-tablet {
   display: none;
+  width: 709px;
+  height: 609px;
+  margin-left: -55px;
 }
 
 .description__image-desktop {
   display: none;
+}
+
+.description__choose-programm {
+  margin: 0 auto;
 }
 
 .description {
@@ -28,6 +35,7 @@
   text-align: center;
   margin: 0;
   padding: 27px 0 0 0;
+  width: 250px;
 }
 
 .description__slogan {
@@ -70,11 +78,22 @@
   }
 }
 
+@media (max-width: 767px) {
+  .description__title {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media (min-width: $tablet-width) {
+  .description__wrapper {
+    margin-left: 120px;
+  }
+
   .description__title {
     color: $black;
     text-align: left;
-    width: 341px;
+    width: 416px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -93,7 +112,7 @@
   }
 
   .description__choose-programm {
-    margin-top: -500px;
+    margin: -586px 0 0 0;
   }
 }
 
@@ -107,10 +126,9 @@
     display: inline;
     width: 552px;
     height: 499px;
-    // left: 39%;
     top: 141px;
     z-index: 2;
-    margin-left: 447px;
+    margin-left: 410px;
   }
 
   .description__choose-programm {
@@ -124,6 +142,7 @@
     width: 284px;
     font-size: 20px;
     line-height: 20px;
+    margin-top: 40px;
   }
 
   .description__background {
@@ -142,10 +161,15 @@
     // background-image: url("../../images/description-cat.png");
     background-color: rgba($basic-green, 0.85);
     min-width: 720px;
-    height: 694px;
+    height: 688px;
   }
 
   .description__title {
     width: 417px;
+    padding-top: 111px;
+  }
+
+  .description__wrapper {
+    margin-left: 190px;
   }
 }

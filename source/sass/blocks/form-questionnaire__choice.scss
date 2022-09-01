@@ -1,21 +1,27 @@
-.form-questionnaire__label-radio {
-  display: block;
-}
+// .form-questionnaire__label-radio {
+//   display: block;
+// }
 
-.form-questionnaire__choice {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+// .form-questionnaire__choice {
+//   position: relative;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   margin-left: 20px;
+//   margin-right: 20px;
+//   padding-top: 10px;
+//   padding-bottom: 25px;
+// }
 
-@media (min-width: $tablet-width) {
-  .form-questionnaire__label-radio {
-    display: inline-block;
-  }
-}
 
-@media (min-width: $desktop-width) {
-  .form-questionnaire__choice {
-    margin-left: 20px;
-  }
-}
+// @media (min-width: $tablet-width) {
+//   .form-questionnaire__label-radio {
+//     display: inline-block;
+//   }
+// }
+
+// @media (min-width: $desktop-width) {
+//   .form-questionnaire__choice {
+//     margin-left: 20px;
+//   }
+// }

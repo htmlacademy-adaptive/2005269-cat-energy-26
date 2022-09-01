@@ -1,6 +1,6 @@
 .address {
-  margin: 0 auto;
-  width: 320px;
+  // margin: 0 auto;
+  // width: 320px;
   position: relative;
 }
 
@@ -10,6 +10,8 @@
 
 .address__background {
   background-color: $basic-gray;
+  justify-content: space-between;
+  display: flex;
 }
 
 .address__title {
@@ -22,23 +24,24 @@
   text-transform: uppercase;
   display: inline-block;
   width: 139px;
+  margin-left: 20px;
 }
 
 .address__text {
   line-height: 20px;
   display: inline-block;
   width: 139px;
+  margin-right: 20px;
 }
 
 .address__iframe {
-  width: 320px;
+  width: 100vw;
   height: 362px;
   border: none;
 }
 
-.address__location {
-  width: 320px;
-  height: 362px;
+.address__br-tablet {
+  display: none;
 }
 
 
@@ -46,37 +49,55 @@
   .address__title {
     width: 172px;
     margin-right: 296px;
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .address__br-tablet {
+    display: block;
   }
 
   .address__text {
     width: 160px;
+    margin-right: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
   }
 
   .address__location {
-    width: 768px;
-    height: 400px;
-    margin-left: -68px;
+    // width: 768px;
+    // height: 400px;
+    // margin-left: -68px;
   }
 
   .address__iframe {
-    width: 768px;
+    width: 100vw;
     height: 400px;
   }
 
   .address {
     margin: 0 auto;
-    width: auto;
+    width: 100vw;
+  }
+
+  .address__background {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .address__location {
-    width: 1440px;
-    margin-left: -110px;
+  .address__background {
+    display: none;
   }
 
   .address__iframe {
-    width: 1440px;
+    // width: 1440px;
+    width: 100vw;
   }
 
   .address__title {
@@ -97,6 +118,7 @@
     box-sizing: border-box;
     justify-content: space-between;
     top: 100px;
+    left: 110px;
   }
 
   .address__title-desktop {
@@ -121,4 +143,8 @@
     height: 79px;
     margin: 0;
   }
+}
+
+.address__background--index {
+  background-color: $white;
 }

@@ -17,6 +17,22 @@
   width: 280px;
 }
 
+.item-button {
+  margin-top: 10px;
+  height: 40px;
+}
+
+.show-all__button {
+  padding: 10px 90px;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
 .additional-button {
   background-color: $basic-gray;
   cursor: pointer;
@@ -28,6 +44,16 @@
   .description__choose-programm {
     margin-top: -100px;
   }
+
+  .submit-button {
+    width: 282px;
+    height: 52px;
+    margin-right: 61px;
+  }
+
+  .item-button {
+    width: 248px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -35,3 +61,4 @@
     width: 100%;
   }
 }
+
