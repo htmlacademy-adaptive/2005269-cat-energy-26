@@ -17,23 +17,13 @@
   width: 280px;
 }
 
-.item-button {
-  margin-top: 10px;
+.button--item {
+  // margin-top: 10px;
   height: 40px;
+  margin: 10px auto 0 auto;
 }
 
-.show-all__button {
-  padding: 10px 90px;
-  box-sizing: border-box;
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-}
-
-.additional-button {
+.button--additional {
   background-color: $basic-gray;
   cursor: pointer;
   border: none;
@@ -41,24 +31,24 @@
 }
 
 @media (min-width: $tablet-width) {
-  .description__choose-programm {
-    margin-top: -100px;
-  }
-
-  .submit-button {
+  .button--submit {
     width: 282px;
     height: 52px;
     margin-right: 61px;
   }
 
-  .item-button {
+  .button--item {
     width: 248px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .button {
-    width: 100%;
+  // .button {
+  //   width: 100%;
+  // }
+
+  .button--submit {
+    width: 568px;
+    margin-right: 120px;
   }
 }
-

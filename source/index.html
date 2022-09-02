@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon-main.ico">
+    <link rel="manifest" href="manifest.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body class="page">
@@ -47,9 +49,14 @@
           <div class="description__wrapper">
             <h1 class="description__title">Функциональное питание для котов</h1>
             <p class="description__slogan">Занялся собой? Займись котом!</p>
-            <img class="description__image" src="img/cat-food.png" alt="Питание для котов.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/cat-food-desktop.png">
+              <source media="(min-width: 768px)" srcset="img/cat-food-tablet.png">
+              <img class="description__image" src="img/cat-food.png" alt="Питание для котов.">
+            </picture>
+            <!-- <img class="description__image" src="img/cat-food.png" alt="Питание для котов.">
             <img class="description__image-tablet" src="img/cat-food-tablet.png" alt="Питание для котов.">
-            <img class="description__image-desktop" src="img/cat-food-desktop.png" alt="Питание для котов.">
+            <img class="description__image-desktop" src="img/cat-food-desktop.png" alt="Питание для котов."> -->
             <a class="description__choose-programm button" href="form.html">Подобрать программу</a>
             <div class="description__background">
               <div class="description__background-image"></div>
@@ -134,7 +141,7 @@
           <h2 class="address__title">приглашаем к сотрудничеству дилеров!</h2>
           <p class="address__text">ул. Большая Конюшенная, д. 19/8<br><br class="address__br-tablet"> Санкт-Петербург</p>
         </div>
-        <div class="address__location" style="position: relative; overflow: hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size: 12px; position: absolute; top: 0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.322805%2C59.938691&utm_medium=mapframe&utm_source=maps&z=17.24" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс Карты</a><iframe class="address__iframe" src="https://yandex.ru/map-widget/v1/-/CCUReRxIOD" style="position: relative;"></iframe></div>
+        <div class="address__location" style="position: relative; overflow: hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size: 12px; position: absolute; top: 0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.322805%2C59.938691&utm_medium=mapframe&utm_source=maps&z=17.24" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс Карты</a><iframe class="address__iframe" src="https://yandex.ru/map-widget/v1/-/CCUReRxIOD" style="position: relative;"></iframe></div>  <!-- stylelint-disable-line -->
         <div class="address__desktop-signature">
           <h2 class="address__title-desktop">приглашаем<br> к сотрудничеству дилеров!</h2>
           <p class="address__text-desktop">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
