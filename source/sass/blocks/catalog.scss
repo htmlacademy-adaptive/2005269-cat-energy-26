@@ -1,11 +1,6 @@
 .catalog__image {
-  width: 68px;
-  height: 77px;
-
-  &:nth-child(2n) {
-    width: 84px;
-    height: 100px;
-  }
+  width: 84px;
+  height: 100px;
 }
 
 .catalog__title {
@@ -118,6 +113,11 @@
     z-index: -1;
     left: 0;
     box-shadow: 0 215px 0 0 $gray-line, 0 430px 0 0 $gray-line, 0 645px 0 0 $gray-line, 0 860px 0 0 $gray-line, 0 1075px 0 0 $gray-line, 0 1290px 0 0 $gray-line;
+  }
+
+  &:nth-of-type(odd) .catalog__image {
+    width: 68px;
+    height: 77px;
   }
 }
 
