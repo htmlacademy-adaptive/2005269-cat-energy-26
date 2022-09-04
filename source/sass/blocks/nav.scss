@@ -11,9 +11,15 @@
 .nav__link {
   text-decoration: none;
   color: $black;
+  text-transform: uppercase;
 }
 
 .nav__list {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
   padding: 0;
   list-style-type: none;
   margin: 0;
@@ -22,7 +28,6 @@
 @media (max-width: 767px) {
   .nav-opened {
     display: block;
-    // position: absolute;
     width: 100%;
     top: 54px;
     z-index: 3;
@@ -67,5 +72,20 @@
 @media (min-width: $desktop-width) {
   .nav__list {
     z-index: 1;
+    margin-top: 37px;
+  }
+
+  .nav__item:nth-child(2) {
+    width: 170px;
+  }
+
+  .nav__item:nth-child(3) {
+    width: 170px;
+  }
+
+  .nav__link--white {
+    color: $white;
+    font-size: 20px;
+    line-height: 30px;
   }
 }

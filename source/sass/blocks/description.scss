@@ -88,7 +88,7 @@
 
 @media (min-width: $tablet-width) {
   .description__wrapper {
-    margin-left: 120px;
+    margin-left: 117px;
   }
 
   .description__title {
@@ -97,18 +97,26 @@
     width: 416px;
     font-size: 60px;
     line-height: 60px;
+    padding: 43px 0 0 0;
   }
 
   .description__slogan {
     color: $black;
     text-align: left;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 42px;
   }
 
   .description__image {
     width: 709px;
     height: 609px;
-    margin-left: -55px;
+    margin-left: -87px;
     display: inline-block;
+    margin-top: 19px;
   }
 
   .description__image-tablet {
@@ -116,7 +124,12 @@
   }
 
   .description__choose-programm {
-    margin: -586px 0 0 0;
+    margin: -583px 0 0 2px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 20px;
+    line-height: 20px;
+    width: 244px;
   }
 }
 
@@ -137,8 +150,9 @@
 
   .description__choose-programm {
     width: 244px;
-    margin-top: 66px;
+    // margin-top: 66px;
     position: relative;
+    margin: 53px 0 0 0;
   }
 
   .description__slogan {
@@ -150,22 +164,19 @@
   }
 
   .description__background {
-    // background-color: rgba($basic-green, 0.85);
     background-image: url("../../img/description-cat-desktop.png");
     background-repeat: no-repeat;
-    // min-width: 720px;
     width: 50%;
     height: 694px;
     position: absolute;
     left: 50%;
-    top: 0;
+    top: -130px;
   }
 
   .description__background-image {
-    // background-image: url("../../images/description-cat.png");
     background-color: rgba($basic-green, 0.85);
     min-width: 720px;
-    height: 688px;
+    height: 712px;
   }
 
   .description__title {
@@ -175,6 +186,7 @@
 
   .description__wrapper {
     margin-left: 190px;
+    margin-top: -18px;
   }
 
   .description__image {
@@ -182,8 +194,8 @@
     display: inline;
     width: 552px;
     height: 499px;
-    top: 141px;
+    top: 10px;
     z-index: 2;
-    margin-left: 410px;
+    margin-left: 367px;
   }
 }

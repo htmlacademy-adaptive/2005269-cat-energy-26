@@ -1,6 +1,4 @@
 .page__header {
-  // height: 65px;
-  // display: flex;
   align-items: center;
   margin: 0 auto;
   position: relative;
@@ -46,8 +44,6 @@
   &--opened {
     z-index: 3;
     top: -3px;
-    // margin-left: -20px;
-    // margin-left: 210px;
 
     &::before,
     &::after {
@@ -84,8 +80,13 @@
   .page__header {
     width: 708px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    padding-top: 18px;
+  }
+
+  .header__wrapper {
+    margin-top: 7px;
   }
 }
 
@@ -94,8 +95,13 @@
     width: 202px;
   }
 
+  .header__wrapper {
+    margin-right: 448px;
+    margin-top: 52px;
+  }
+
   .page__header {
     width: 1220px;
-    justify-content: space-between;
+    padding-top: 0;
   }
 }
