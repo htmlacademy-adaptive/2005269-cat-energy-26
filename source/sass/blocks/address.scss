@@ -11,6 +11,12 @@
   justify-content: space-between;
   display: flex;
   margin-top: 13px;
+  padding-top: 13px;
+  padding-bottom: 11px;
+}
+
+.address__background--index {
+  padding-top: 0;
 }
 
 .address__title {
@@ -66,12 +72,6 @@
     text-align: right;
   }
 
-  .address__location {
-    // width: 768px;
-    // height: 400px;
-    // margin-left: -68px;
-  }
-
   .address__iframe {
     width: 100vw;
     height: 400px;
@@ -114,7 +114,7 @@
     display: flex;
     position: absolute;
     background-color: $white;
-    padding: 58px 80px;
+    padding: 62px 80px;
     box-sizing: border-box;
     justify-content: space-between;
     top: 91px;

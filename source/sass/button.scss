@@ -20,7 +20,7 @@
 .button--item {
   // margin-top: 10px;
   height: 40px;
-  margin: 10px auto 0 auto;
+  margin: 16px auto 0 auto;
 }
 
 .button--additional {
@@ -35,20 +35,23 @@
     width: 282px;
     height: 52px;
     margin-right: 61px;
+    font-size: 20px;
   }
 
   .button--item {
     width: 248px;
+    margin: 26px auto 0 auto;
   }
 }
 
 @media (min-width: $desktop-width) {
-  // .button {
-  //   width: 100%;
-  // }
+  .button--item {
+    margin: 29px auto 0 auto;
+    width: 170px;
+  }
 
   .button--submit {
     width: 568px;
-    margin-right: 120px;
+    margin-right: 79px;
   }
 }

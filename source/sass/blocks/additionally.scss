@@ -4,7 +4,7 @@
 
 .additionally__wrapper {
   margin-left: 20px;
-  margin-top: 34px;
+  margin-top: 38px;
 }
 
 .additionally-text {
@@ -63,7 +63,7 @@
   }
 
   &:last-child {
-    margin-bottom: 34px;
+    margin-bottom: 26px;
   }
 }
 
@@ -91,11 +91,30 @@
     display: inline-block;
   }
 
+  .additionally-control {
+    width: 40px;
+    height: 40px;
+    left: -14px;
+  }
+
+  .additionally__label-checkbox input:checked + .additionally-control {
+    &::before {
+      content: url("../../img/svg-images/checkmark.svg");
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 4;
+    }
+  }
+
   .additionally__container-checkbox {
+    margin-left: 13px;
     display: grid;
-    grid-template-columns: 221px 221px;
-    column-gap: 123px;
-    row-gap: 14px;
+    grid-template-columns: 220px 221px;
+    column-gap: 124px;
+    row-gap: 30px;
+    margin-top: 62px;
+    margin-bottom: 33px;
   }
 
   .additionally__wrapper {
@@ -104,6 +123,7 @@
   }
 
   .additionally__title {
+    margin-top: 60px;
     font-size: 36px;
     line-height: 36px;
     width: 211px;
@@ -114,19 +134,30 @@
 
   .additionally__main-text {
     display: inline;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .additionally-text {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .additionally__wrapper {
     width: 1220px;
-    // display: grid;
-    // grid-template-columns: 244px 244px 244px 244px;
-    // gap: 61px 80px;
+    margin-bottom: 84px;
     margin-left: 110px;
   }
 
   .additionally__container-checkbox {
-    grid-template-columns: 221px 221px 221px 221px;
+    grid-template-columns: 201px 201px 201px 219px;
+    margin-bottom: 39px;
+  }
+
+  .additionally__title {
+    margin-top: 65px;
+    margin-left: 70px;
   }
 }

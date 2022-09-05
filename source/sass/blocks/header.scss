@@ -8,7 +8,7 @@
 .header__wrapper {
   display: flex;
   justify-content: center;
-  margin-top: 15px;
+  padding-top: 12px;
   padding-bottom: 15px;
 }
 
@@ -21,8 +21,8 @@
 .header__toggle {
   padding: 0;
   position: absolute;
-  top: -3px;
-  margin-right: -241px;
+  top: 7px;
+  margin-right: -262px;
   z-index: 2;
   display: block;
   width: 70px;
@@ -35,7 +35,7 @@
     position: absolute;
     top: 15px;
     left: 17px;
-    width: 36px;
+    width: 24px;
     height: 2px;
     background-color: $black;
     box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
@@ -82,7 +82,7 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    padding-top: 18px;
+    padding-top: 8px;
   }
 
   .header__wrapper {
@@ -97,7 +97,7 @@
 
   .header__wrapper {
     margin-right: 448px;
-    margin-top: 52px;
+    margin-top: 42px;
   }
 
   .page__header {

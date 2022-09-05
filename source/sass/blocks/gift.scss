@@ -12,6 +12,7 @@
   height: 290px;
   box-sizing: border-box;
   padding: 59px 0 0 0;
+  margin-top: 55px;
 }
 
 .gift__title {
@@ -46,6 +47,23 @@
     display: flex;
     width: 707px;
     height: 200px;
+    margin-top: 72px;
+  }
+
+  .gift__image {
+    margin-left: 78px;
+  }
+
+  .gift__title {
+    margin-right: 123px;
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    color: #ffffff;
+    width: 161px;
   }
 }
 
@@ -63,5 +81,11 @@
     flex-direction: column;
     height: 290px;
     box-sizing: border-box;
+    margin: 0;
+    width: 245px;
+  }
+
+  .gift__title {
+    margin-right: 43px;
   }
 }
