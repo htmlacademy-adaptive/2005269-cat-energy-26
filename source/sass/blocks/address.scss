@@ -17,6 +17,7 @@
 
 .address__background--index {
   padding-top: 0;
+  background-color: $white;
 }
 
 .address__title {
@@ -96,7 +97,6 @@
   }
 
   .address__iframe {
-    // width: 1440px;
     width: 100vw;
   }
 
@@ -143,8 +143,9 @@
     height: 79px;
     margin: 0;
   }
+
+  .address__background--index {
+    background-color: $white;
+  }
 }
 
-.address__background--index {
-  background-color: $white;
-}
