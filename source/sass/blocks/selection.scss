@@ -1,4 +1,4 @@
-.selection-title {
+.selection__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -6,6 +6,7 @@
   line-height: 36px;
   display: block;
   margin-left: 20px;
+  margin-bottom: 35px;
 }
 
 .selection__subtitle {
@@ -19,12 +20,14 @@
 }
 
 @media (min-width: $tablet-width) {
-  .selection-title {
+  .selection__title {
     font-family: "Oswald", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 60px;
     line-height: 60px;
+    margin-left: 0;
+    margin-top: 43px;
   }
 
   .selection__subtitle {
@@ -32,5 +35,12 @@
     line-height: 30px;
     width: 324px;
     margin-bottom: 66px;
+    margin-top: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .selection__title {
+    margin-top: 55px;
   }
 }

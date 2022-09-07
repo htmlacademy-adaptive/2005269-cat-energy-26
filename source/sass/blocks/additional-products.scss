@@ -27,6 +27,7 @@
   line-height: 16px;
   text-align: left;
   text-transform: uppercase;
+  margin-bottom: 12px;
 }
 
 .additional-product__name {
@@ -47,24 +48,24 @@
 .additional-product__text {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .additional-products__item {
   &:not(:last-child) {
-    margin-bottom: 39px;
+    margin-bottom: 31px;
     border-bottom: none;
   }
 
   &::before {
     content: "";
     position: absolute;
-    top: 56px;
+    top: 58px;
     height: 1px;
     background-color: $special-grey;
     width: 280px;
     z-index: 1;
-    box-shadow: 0 145px 0 0 $special-grey, 0 290px 0 0 $special-grey, 0 435px 0 0 $special-grey;
+    box-shadow: 0 130px 0 0 $special-grey, 0 260px 0 0 $special-grey, 0 390px 0 0 $special-grey;
   }
 }
 
@@ -83,14 +84,16 @@
 
   .additional-products__list {
     width: 708px;
+    margin: 80px auto 0 auto;
   }
 
   .additional-product__button {
     width: 100%;
+    margin-top: 19px;
   }
 
   .additional-products__title {
-    margin-left: 60px;
+    margin-left: 34px;
     padding: 0 37px 0 33px;
     font-family: "Oswald", sans-serif;
     font-style: normal;
@@ -98,11 +101,15 @@
     font-size: 36px;
     line-height: 36px;
     width: 341px;
+    margin-top: 68px;
   }
 
   .additional-product__title {
     display: inline-block;
     width: 163px;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
   }
 
   .additional-product__text {
@@ -111,6 +118,9 @@
     width: 217px;
     justify-content: space-between;
     text-align: right;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 0;
   }
 
   .additional-product__name {
@@ -130,36 +140,39 @@
 
   .additional-product__button {
     width: 244px;
+    margin-top: 0;
   }
-
-  // .gift {
-  //   display: none;
-  // }
 
   .additional-products__list {
     display: inline-block;
-    margin-left: 110px;
+    // margin-left: 110px;
     width: 896px;
-    margin-bottom: 86px;
+    // margin-bottom: 86px;
+    margin: 46px -32px 85px 110px;
   }
 
   .additional-products__title {
     padding: 0 35px 0 40px;
     margin-left: 73px;
+    margin-top: 78px;
+  }
+
+  .additional-product__title {
+    align-self: center;
   }
 
   .additional-product__text {
     margin-bottom: 0;
     align-items: center;
     align-self: center;
-    margin-left: 163px;
+    margin-left: 52px;
     text-align: left;
   }
 
   .additional-product__name {
-    width: 132px;
     margin-right: 43px;
     display: inline-block;
+    width: 126px;
   }
 
   .additional-wrapper {

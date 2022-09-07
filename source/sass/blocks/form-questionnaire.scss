@@ -40,7 +40,7 @@
   display: block;
 
   &:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
   }
 }
 
@@ -52,7 +52,7 @@
 .form-questionnaire__names {
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 24px;
+  margin-bottom: 11px;
 }
 
 .form-questionnaire__name input {
@@ -87,11 +87,11 @@
 }
 
 .name-text-weight {
-  width: 80px;
+  width: 105px;
 }
 
 .name-text-years {
-  width: 150px;
+  width: 179px;
 }
 
 .form-questionnaire-text {
@@ -121,19 +121,76 @@
     border: 1px solid #d9d9d9;
     width: 97vw;
     padding-top: 27px;
-    padding-bottom: 25px;
+    padding-left: 22px;
+    padding-bottom: 21px;
   }
 }
 
 @media (min-width: $tablet-width) {
+  .form-questionnaire__input-radio:checked + .form-questionnaire__control {
+    &::before {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 18px;
+      height: 18px;
+      background-color: $basic-green;
+      border-radius: 50%;
+      content: "";
+    }
+  }
+
+  .form-questionnaire__control {
+    width: 40px;
+    height: 40px;
+    left: -15px;
+  }
+
   .form-questionnaire {
     margin-left: 50px;
+  }
+
+  .form-questionnaire-text {
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .form-questionnaire__fieldset {
     border: 1px solid #d9d9d9;
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: 41px;
+  }
+
+  .form-questionnaire__name-text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .name-text-appellation {
+    width: 57px;
+  }
+
+  .name-text-weight {
+    width: 121px;
+  }
+
+  .name-text-years {
+    width: 186px;
+  }
+
+  .form-questionnaire__name {
+    &:not(:last-child) {
+      margin-bottom: 27px;
+    }
+  }
+
+  .form-questionnaire__name input {
+    margin-right: 49px;
+  }
+
+  .form-questionnaire__names {
+    margin-bottom: 65px;
   }
 }
 
@@ -147,5 +204,15 @@
   .form-questionnaire__choice {
     padding-top: 0;
     margin-left: 20px;
+  }
+
+  .form-questionnaire__fieldset {
+    margin-left: 71px;
+    width: 516px;
+  }
+
+  .form-questionnaire__names {
+    margin-left: 12px;
+    width: 617px;
   }
 }

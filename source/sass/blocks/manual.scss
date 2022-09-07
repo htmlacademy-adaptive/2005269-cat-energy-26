@@ -8,6 +8,7 @@
   padding: 0;
   list-style: none;
   width: 279px;
+  margin-top: 39px;
 }
 
 .manual__icon {
@@ -15,6 +16,10 @@
   z-index: 2;
   left: 15px;
   top: 14px;
+}
+
+.manual__title {
+  margin-top: 25px;
 }
 
 .manual__item {
@@ -76,6 +81,12 @@
 @media (min-width: $tablet-width) {
   .manual {
     width: auto;
+    margin: 20px 20px 49px 30px;
+  }
+
+  .manual__icon {
+    left: 24px;
+    top: 24px;
   }
 
   .manual__list {
@@ -84,13 +95,14 @@
     gap: 76px 133px;
     counter-reset: manual-counter;
     width: auto;
-    justify-content: center;
+    margin-top: 71px;
   }
 
   .manual__title {
     font-size: 60px;
     line-height: 60px;
     width: 375px;
+    margin-top: 45px;
   }
 
   .manual__item {
@@ -101,7 +113,7 @@
     padding: 0;
 
     &::before {
-      top: -35px;
+      top: -39px;
       counter-increment: manual-counter;
       position: absolute;
       font-family: "Oswald", sans-serif;
@@ -109,11 +121,31 @@
       font-weight: 400;
       font-size: 280px;
       line-height: 280px;
-      color: $basic-gray;
+      color: #f2f2f2;
       width: 120px;
       content: counter(manual-counter);
       z-index: -1;
-      right: 0;
+      right: 42px;
+    }
+
+    &:nth-child(1)::after {
+      width: 80px;
+      height: 80px;
+    }
+
+    &:nth-child(2)::after {
+      width: 80px;
+      height: 80px;
+    }
+
+    &:nth-child(3)::after {
+      width: 80px;
+      height: 80px;
+    }
+
+    &:nth-child(4)::after {
+      width: 80px;
+      height: 80px;
     }
   }
 
@@ -122,14 +154,22 @@
     display: block;
     margin-bottom: 251px;
     width: 245px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .manual__list {
+    margin-left: -85px;
     display: grid;
-    grid-template-columns: 230px 246px 248px 250px;
-    gap: 102px;
+    grid-template-columns: 230px 232px 231px 250px;
+    gap: 94px;
     justify-content: center;
+    margin-top: 72px;
+  }
+
+  .manual {
+    margin: 72px 20px 49px 110px;
   }
 }

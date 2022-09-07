@@ -1,26 +1,28 @@
 .page__footer {
   background-color: $basic-gray;
-  padding: 39px 20px 20px 20px;
+  // padding: 39px 20px 20px 20px;
+  padding: 28px 20px 20px 20px;
 }
 
 .footer__logo {
   display: flex;
   justify-content: center;
-  margin-bottom: 32px;
+  margin-bottom: 50px;
+  margin-top: 7px;
 }
 
 .footer__htmlacademy {
   font-size: 16px;
   display: flex;
   justify-content: space-between;
-  margin-top: 43px;
+  margin-top: 39px;
 }
 
 .footer__htmlacademy-title {
   align-self: center;
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: 767px) {
   .page__footer {
     &::before {
       content: "";
@@ -40,6 +42,7 @@
   .page__footer {
     display: flex;
     justify-content: center;
+    padding: 56px 20px 56px 20px;
   }
 
   .footer__logo {
@@ -61,5 +64,12 @@
 @media (min-width: $desktop-width) {
   .footer__logo {
     margin-right: 412px;
+    margin-top: 0;
+  }
+
+  .page__footer {
+    display: flex;
+    justify-content: center;
+    padding: 51px 20px 56px 20px;
   }
 }
