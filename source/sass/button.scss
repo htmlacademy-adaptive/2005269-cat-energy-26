@@ -15,10 +15,17 @@
   padding-top: 12px;
   padding-bottom: 12px;
   width: 280px;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
 }
 
 .button--item {
-  // margin-top: 10px;
   height: 40px;
   margin: 16px auto 0 auto;
 }
@@ -28,6 +35,10 @@
   cursor: pointer;
   border: none;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -27,6 +27,10 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  &:active {
+    color: rgba($special_dark-grey, 0.3);
+  }
 }
 
 .show-all__subtitle {

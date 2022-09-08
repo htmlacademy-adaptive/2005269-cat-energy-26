@@ -71,11 +71,31 @@
   text-transform: uppercase;
   padding-right: 49px;
   position: relative;
+  cursor: pointer;
 
   &::before {
     content: url("../../img/svg-images/programm-arrow.svg");
     position: absolute;
     right: 0;
+  }
+
+  &:hover {
+    &::before {
+      content: url("../../img/svg-images/programm-arrow-big.svg");
+      right: -10px;
+      top: -3px;
+    }
+  }
+
+  &:active {
+    color: rgba($black, 0.3);
+
+    &::before {
+      content: url("../../img/svg-images/programm-arrow-big.svg");
+      right: -10px;
+      top: -3px;
+      opacity: 0.3;
+    }
   }
 }
 
@@ -106,7 +126,6 @@
 
   .programm {
     width: 708px;
-    // padding: 77px 0 58px 52px;
   }
 
   .programm__catalog-button {
