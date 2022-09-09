@@ -42,9 +42,11 @@
       <div class="header__wrapper">
       <div class="header__logo logo">
         <a class="logo__image" href="">
-          <img class="logo__litle" src="img/svg-images/logo-catenergy.svg" alt="Логотип Cat Energy.">
-          <img class="logo__big" src="img/svg-images/logo-tablet.svg" alt="Логотип Cat Energy.">
-          <img class="logo__very-big" src="img/svg-images/logo-desktop.svg" alt="Логотип Cat Energy.">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/svg-images/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/svg-images/logo-tablet.svg">
+            <img class="logo__litle" src="img/svg-images/logo-mobile.svg" alt="Логотип Cat Energy.">
+          </picture>
         </a>
         <a class="logo__title" href="">
           <img src="img/svg-images/logo-catenergy-title.svg" width="101" height="18" alt="Надпись Cat Energy.">
@@ -80,7 +82,7 @@
             <h1 class="description__title">Функциональное питание для котов</h1>
             <p class="description__slogan">Занялся собой? Займись котом!</p>
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/cat-food-desktop.png">
+              <source media="(min-width: 1440px)" srcset="img/cat-food-desktop.png">
               <source media="(min-width: 768px)" srcset="img/cat-food-tablet.png">
               <img class="description__image" src="img/cat-food.png" alt="Питание для котов.">
             </picture>
@@ -162,8 +164,6 @@
               <img class="live-example__image-after" src="img/live-example-cat-mobile-after.png" alt="Живой пример кота после.">
             </div>
             <div class="live-example__contrast">
-              <!-- <svg class="live-example__picture" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="18" width="4" height="257.02" rx="2" fill="#666"/><rect x="1" y="110" width="38" height="38" rx="19" fill="#fff"/><path d="m16 120-8 9 8 9v-18ZM32 129l-8-9v18l8-9Z" fill="#666"/><rect x="1" y="110" width="38" height="38" rx="19" stroke="#666" stroke-width="2"/></svg> -->
-              <!-- viewBox="0 0 40 258"  -->
               <span class="visually-hidden">Было.</span>
               <input class="live-example__scroll visually-hidden" type="range">
               <span class="visually-hidden">Стало.</span>
@@ -172,15 +172,15 @@
       </section>
 
       <section class="address">
-        <div class="address__background  address__background--index"">
+        <div class="address__background address__background--index"">
           <h2 class="address__title">приглашаем<br> к сотрудничеству дилеров!</h2>
           <p class="address__text">ул. Большая Конюшенная, д. 19/8<br><br class="address__br-tablet"> Санкт-Петербург</p>
         </div>
         <div class="address__location" style="position: relative; overflow: hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size: 12px; position: absolute; top: 0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.322805%2C59.938691&utm_medium=mapframe&utm_source=maps&z=17.24" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс Карты</a><iframe class="address__iframe" src="https://yandex.ru/map-widget/v1/-/CCUReRxIOD" style="position: relative;"></iframe></div>  <!-- stylelint-disable-line -->
-        <div class="address__desktop-signature">
+        <!-- <div class="address__desktop-signature">
           <h2 class="address__title-desktop">приглашаем<br> к сотрудничеству дилеров!</h2>
           <p class="address__text-desktop">ул. Большая Конюшенная, д. 19/8<br><br> Санкт-Петербург</p>
-        </div>
+        </div> -->
       </section>
     </main>
 
