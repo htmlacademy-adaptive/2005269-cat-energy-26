@@ -9,6 +9,14 @@
   padding-bottom: 25px;
 }
 
+.form-questionnaire__input-radio:disabled + .form-questionnaire__control {
+  border: 1px solid rgba($special-grey, 0.3);
+
+  &::before {
+    opacity: 0.3;
+  }
+}
+
 .form-questionnaire__input-radio:checked + .form-questionnaire__control {
   &::before {
     position: absolute;
@@ -69,6 +77,30 @@
   font-size: 16px;
   line-height: 18px;
   padding-left: 16px;
+
+  &:hover {
+    border: 1px solid $special-grey;
+  }
+
+  &:focus {
+    border: 1px solid $special_dark-grey;
+    outline: 1px solid $special_dark-grey;
+  }
+
+  &--error {
+    border: 1px solid #ff8282;
+    outline: 1px solid #ff8282;
+
+    &:hover {
+      border: 1px solid #ff8282;
+      outline: 1px solid #ff8282;
+    }
+
+    &:focus {
+      border: 1px solid #ff8282;
+      outline: 1px solid #ff8282;
+    }
+  }
 }
 
 .label-radio {
@@ -113,6 +145,10 @@
   position: absolute;
   top: -6px;
   border-radius: 100%;
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
 }
 
 @media (max-width: 767px) {

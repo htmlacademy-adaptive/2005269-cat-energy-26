@@ -74,6 +74,10 @@
   box-sizing: border-box;
   position: absolute;
   top: -6px;
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
 }
 
 .additionally__label-checkbox input:checked + .additionally-control {
@@ -84,6 +88,10 @@
     left: 5px;
     z-index: 4;
   }
+}
+
+.additionally__label-checkbox input:disabled + .additionally-control {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

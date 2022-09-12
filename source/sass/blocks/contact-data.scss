@@ -48,7 +48,11 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special_dark-grey;
-  border: 1px solid $special-grey;
+  border: 1px solid #e7e7e7;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
 }
 
 .contact-data__input-text {
@@ -56,6 +60,33 @@
   height: 46px;
   position: relative;
   padding-left: 15px;
+
+  &:focus + svg path {
+    stroke: $basic-green;
+  }
+
+  &--error {
+    border: 1px solid #ff8282;
+    outline: 1px solid #ff8282;
+
+    &:hover {
+      border: 1px solid #ff8282;
+      outline: 1px solid #ff8282;
+    }
+
+    &:focus {
+      border: 1px solid #ff8282;
+      outline: 1px solid #ff8282;
+    }
+
+    & + svg path {
+      stroke: #ff8282;
+    }
+
+    &:focus + svg path {
+      stroke: #ff8282;
+    }
+  }
 }
 
 .contact-data__label-text-mail {

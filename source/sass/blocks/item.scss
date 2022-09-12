@@ -1,0 +1,17 @@
+.item {
+  &:hover .item__vk-svg {
+    fill: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover .item__youtube-svg {
+    fill: $basic-green;
+  }
+
+  &:hover .item__tg-svg {
+    fill: $basic-green;
+  }
+}

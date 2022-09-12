@@ -1,6 +1,5 @@
 .page__footer {
   background-color: $basic-gray;
-  // padding: 39px 20px 20px 20px;
   padding: 28px 20px 20px 20px;
 }
 
@@ -9,6 +8,14 @@
   justify-content: center;
   margin-bottom: 50px;
   margin-top: 7px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .footer__htmlacademy {
@@ -16,7 +23,17 @@
   display: flex;
   justify-content: space-between;
   margin-top: 39px;
+  cursor: pointer;
+
+  &:hover .footer__htmlacademy-svg {
+    fill: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
+
 
 .footer__htmlacademy-title {
   align-self: center;
