@@ -4,6 +4,17 @@
   position: relative;
 }
 
+.live-example__image-before {
+  width: 280px;
+  height: 256px;
+}
+
+.live-example__image-after {
+  width: 280px;
+  height: 256px;
+  transform: translate(-50%, 0);
+}
+
 .live-example__fieldset-wrapper {
   display: flex;
   justify-content: center;
@@ -94,10 +105,6 @@
 .live-example__slider {
   display: flex;
   justify-content: center;
-}
-
-.live-example__image-after {
-  transform: translate(-50%, 0);
 }
 
 .live-example__counter {
@@ -211,7 +218,8 @@
 
   .live-example__image-after {
     object-fit: cover;
-    width: 280px;
+    // width: 280px;
+    width: 479px;
     height: 512px;
     transform: translate(-50%, 0);
   }

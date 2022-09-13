@@ -93,22 +93,7 @@
 
 @media (min-width: $desktop-width) {
   .address__background {
-    display: none;
-  }
-
-  .address__iframe {
-    width: 100vw;
-  }
-
-  .address__title {
-    display: none;
-  }
-
-  .address__text {
-    display: none;
-  }
-
-  .address__desktop-signature {
+    // display: none;
     width: 565px;
     height: 198px;
     display: flex;
@@ -119,6 +104,49 @@
     justify-content: space-between;
     top: 91px;
     left: 110px;
+    z-index: 3;
+  }
+
+  .address__iframe {
+    width: 100vw;
+  }
+
+  .address__title {
+    // display: none;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    width: 163px;
+    height: 84px;
+    margin: 0;
+  }
+
+  .address__text {
+    // display: none;
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    width: 155px;
+    height: 79px;
+    margin: 0;
+  }
+
+  .address__desktop-signature {
+    // width: 565px;
+    // height: 198px;
+    // display: flex;
+    // position: absolute;
+    // background-color: $white;
+    // padding: 62px 80px;
+    // box-sizing: border-box;
+    // justify-content: space-between;
+    // top: 91px;
+    // left: 110px;
   }
 
   .address__title-desktop {

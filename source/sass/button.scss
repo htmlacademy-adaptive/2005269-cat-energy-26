@@ -12,8 +12,10 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  // padding-top: 12px;
+  // padding-bottom: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 280px;
 
   &:hover {
@@ -26,8 +28,9 @@
 }
 
 .button--item {
-  height: 40px;
+  // height: 40px;
   margin: 16px auto 0 auto;
+  display: block;
 }
 
 .button--additional {
