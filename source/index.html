@@ -52,11 +52,9 @@
           <img src="img/svg-images/logo-catenergy-title.svg" width="101" height="18" alt="Надпись Cat Energy.">
         </a>
       </div>
-      <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <!-- header__toggle--opened -->
+      <button class="header__toggle header__toggle--opened" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </div>
-      <nav class="header__nav nav ">
-        <!-- nav-opened -->
+      <nav class="header__nav nav nav-opened">
         <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link nav__link--active nav__link--white nav__link--white-active" href="index.html">
@@ -82,9 +80,9 @@
             <h1 class="description__title">Функциональное питание для котов</h1>
             <p class="description__slogan">Занялся собой? Займись котом!</p>
             <picture>
-              <source media="(min-width: 1440px)" srcset="img/cat-food-desktop.png">
-              <source media="(min-width: 768px)" srcset="img/cat-food-tablet.png">
-              <img class="description__image" src="img/cat-food.png" alt="Питание для котов.">
+              <source media="(min-width: 1440px)" srcset="img/cat-food-desktop.png, img/cat-food-desktop@2x.png" alt="Питание для котов.">
+              <source media="(min-width: 768px)" srcset="img/cat-food-tablet.png, img/cat-food-tablet@2x.png" alt="Питание для котов.">
+              <img class="description__image" src="img/cat-food.png" srcset="img/cat-food2x.png" alt="Питание для котов.">
             </picture>
             <a class="description__choose-programm button" href="form.html">Подобрать программу</a>
             <div class="description__background">
@@ -93,21 +91,23 @@
           </div>
         </section>
 
-        <section class="programm programm-weight-loss">
-          <h2 class="programm__title">Похудение</h2>
-          <p class="programm__text">
-            Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
-          </p>
-          <a class="programm__catalog-button">каталог slim</a>
-        </section>
+        <div class="programm">
+          <section class="programm__main programm-weight-loss">
+            <h2 class="programm__title">Похудение</h2>
+            <p class="programm__text">
+              Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+            </p>
+            <a class="programm__catalog-button" href="weight-loss.html">каталог slim</a>
+          </section>
 
-        <section class="programm programm-weight-gain">
-          <h2 class="programm__title">Набор массы</h2>
-          <p class="programm__text">
-            Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
-          </p>
-          <a class="programm__catalog-button">каталог pro</a>
-        </section>
+          <section class="programm__main programm-weight-gain">
+            <h2 class="programm__title">Набор массы</h2>
+            <p class="programm__text">
+              Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+            </p>
+            <a class="programm__catalog-button" href="weight-gain.html">каталог pro</a>
+          </section>
+        </div>
 
         <section class="manual">
           <h2 class="manual__title heading">Как это работает</h2>
@@ -157,11 +157,17 @@
         </div>
           <div class="live-example__slider">
             <div class="live-example__wrapper-image">
-              <img class="live-example__image-before" src="img/live-example-cat-mobile-before.png" alt="Живой пример кота до.">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/live-example-cat-before.png, img/live-example-cat-before@2x.png">
+                <img class="live-example__image-before" src="img/live-example-cat-mobile-before.png" srcset="img/live-example-cat-mobile-before@2x.png" alt="Живой пример кота до.">
+              </picture>
             </div>
 
             <div class="live-example__wrapper-image">
-              <img class="live-example__image-after" src="img/live-example-cat-mobile-after.png" alt="Живой пример кота после.">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/live-example-cat-after.png, img/live-example-cat-after@2x.png">
+                <img class="live-example__image-after" src="img/live-example-cat-mobile-after.png" srcset="img/live-example-cat-mobile-after@2x.png" alt="Живой пример кота после.">
+              </picture>
             </div>
             <div class="live-example__contrast">
               <span class="visually-hidden">Было.</span>
@@ -172,7 +178,7 @@
       </section>
 
       <section class="address">
-        <div class="address__background address__background--index"">
+        <div class="address__background address__background--index">
           <h2 class="address__title">приглашаем<br> к сотрудничеству дилеров!</h2>
           <p class="address__text">ул. Большая Конюшенная, д. 19/8<br><br class="address__br-tablet"> Санкт-Петербург</p>
         </div>
@@ -207,7 +213,7 @@
       </div>
 
       <div class="footer__htmlacademy">
-        <span class="footer__htmlacademy-title">HTML Academy</span>
+        <a class="footer__htmlacademy-title" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         <svg width="27" height="34" viewBox="0 0 27 34" xmlns="http://www.w3.org/2000/svg"><path class="footer__htmlacademy-svg" d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z" fill="#666"/></svg>
       </div>
     </footer>

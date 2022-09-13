@@ -1,4 +1,4 @@
-.programm {
+.programm__main {
   background-color: $basic-gray;
 }
 
@@ -72,6 +72,7 @@
   padding-right: 49px;
   position: relative;
   cursor: pointer;
+  text-decoration: none;
 
   &::before {
     content: url("../../img/svg-images/programm-arrow.svg");
@@ -124,7 +125,7 @@
     }
   }
 
-  .programm {
+  .programm__main {
     width: 708px;
   }
 
@@ -160,13 +161,18 @@
 
 @media (min-width: $desktop-width) {
   .programm {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .programm__main {
     display: inline-block;
     width: 570px;
   }
 
   .programm-weight-loss {
     margin-right: 74px;
-    margin-left: 110px;
+    // margin-left: 110px;
     margin-top: 363px;
     padding: 76px 0 57px 52px;
 

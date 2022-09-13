@@ -19,6 +19,10 @@
 }
 
 .show-all__button {
+  text-align: center;
+  text-decoration: none;
+  color: #222222;
+  display: block;
   padding: 10px 90px;
   box-sizing: border-box;
   font-family: "Oswald", sans-serif;
@@ -86,7 +90,7 @@
   }
 
   .show-all__subtitle {
-    margin: 23px auto 87px auto;
+    margin: 23px auto 91px auto;
     width: 167px;
     font-size: 16px;
     line-height: 18px;
