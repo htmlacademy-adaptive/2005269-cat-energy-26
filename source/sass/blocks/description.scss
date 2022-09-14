@@ -16,7 +16,7 @@
 }
 
 .description__wrapper {
-  height: 302px;
+  // height: 302px;
   flex-direction: column;
   display: flex;
 }
@@ -32,6 +32,7 @@
   margin: 0;
   padding: 27px 0 0 0;
   width: 250px;
+  word-break: break-all;
 }
 
 .description__slogan {
@@ -199,6 +200,7 @@
   .description__wrapper {
     margin-left: 190px;
     margin-top: -18px;
+    margin-bottom: 230px;
   }
 
   .description__image {

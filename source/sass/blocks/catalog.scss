@@ -89,6 +89,7 @@
 }
 
 .catalog__left {
+  min-height: 129px;
   display: flex;
   width: 140px;
   align-items: center;
@@ -110,7 +111,7 @@
 }
 
 .catalog__item {
-  height: 165px;
+  // height: 165px;
 
   &::before {
     content: "";
@@ -133,7 +134,7 @@
 
 @media (max-width: 767px) {
   .catalog__item:not(:last-child) {
-    margin-bottom: 45px;
+    margin-bottom: 32px;
   }
 }
 

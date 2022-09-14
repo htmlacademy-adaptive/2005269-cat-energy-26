@@ -2,6 +2,11 @@
   background-color: $basic-gray;
 }
 
+.programm {
+  flex-direction: column;
+  display: flex;
+}
+
 .programm__text {
   margin-top: 31px;
   margin-bottom: 40px;
@@ -59,6 +64,7 @@
   padding-left: 69px;
   margin-top: 7px;
   color: $black;
+  word-break: break-all;
 }
 
 .programm__catalog-button {
@@ -103,7 +109,7 @@
 @media (min-width: $tablet-width) {
   .programm-weight-loss {
     margin-top: 544px;
-    padding: 82px 0 58px 52px;
+    padding: 82px 10px 58px 52px;
 
     &::before {
       top: 88px;
@@ -114,7 +120,7 @@
   }
 
   .programm-weight-gain {
-    padding: 77px 0 58px 52px;
+    padding: 77px 10px 58px 52px;
     margin-top: 29px;
 
     &::before {
@@ -163,6 +169,7 @@
   .programm {
     width: 1220px;
     margin: 0 auto;
+    flex-direction: row;
   }
 
   .programm__main {
@@ -173,8 +180,8 @@
   .programm-weight-loss {
     margin-right: 74px;
     // margin-left: 110px;
-    margin-top: 363px;
-    padding: 76px 0 57px 52px;
+    margin-top: 0;
+    padding: 76px 10px 57px 52px;
 
     &::before {
       width: 100px;
@@ -185,8 +192,8 @@
   }
 
   .programm-weight-gain {
-    padding: 77px 0 58px 54px;
-    margin-top: 29px;
+    padding: 77px 10px 58px 54px;
+    margin-top: 0;
 
     &::before {
       width: 134px;
