@@ -1,5 +1,5 @@
 .button {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -12,8 +12,6 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  // padding-top: 12px;
-  // padding-bottom: 12px;
   padding-top: 10px;
   padding-bottom: 10px;
   width: 280px;
@@ -28,8 +26,7 @@
 }
 
 .button--item {
-  // height: 40px;
-  margin: 16px auto 0 auto;
+  margin: 7px auto 0;
   display: block;
 }
 
@@ -47,20 +44,20 @@
 @media (min-width: $tablet-width) {
   .button--submit {
     width: 282px;
-    height: 52px;
+    min-height: 52px;
     margin-right: 61px;
     font-size: 20px;
   }
 
   .button--item {
     width: 248px;
-    margin: 26px auto 0 auto;
+    margin: 26px auto 20px auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .button--item {
-    margin: 29px auto 0 auto;
+    margin: 29px auto 20px auto;
     width: 170px;
   }
 

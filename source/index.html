@@ -48,11 +48,11 @@
             <img class="logo__litle" src="img/svg-images/logo-mobile.svg" alt="Логотип Cat Energy.">
           </picture>
         </a>
-        <a class="logo__title" href="">
+        <a class="logo__title" href="index.html">
           <img src="img/svg-images/logo-catenergy-title.svg" width="101" height="18" alt="Надпись Cat Energy.">
         </a>
       </div>
-      <button class="header__toggle header__toggle--opened" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <!-- <button class="header__toggle header__toggle--opened" type="button"><span class="visually-hidden">Открыть меню</span></button> -->
     </div>
       <nav class="header__nav nav nav-opened">
         <ul class="nav__list">
@@ -80,8 +80,10 @@
             <h1 class="description__title">Функциональное питание для котов</h1>
             <p class="description__slogan">Занялся собой? Займись котом!</p>
             <picture>
-              <source media="(min-width: 1440px)" srcset="img/cat-food-desktop.png, img/cat-food-desktop@2x.png" alt="Питание для котов.">
-              <source media="(min-width: 768px)" srcset="img/cat-food-tablet.png, img/cat-food-tablet@2x.png" alt="Питание для котов.">
+              <source media="(min-width: 1440px) and (min-resolution: 2dppx)" srcset="img/cat-food-desktop@2x.png">
+              <source media="(min-width: 1440px)" srcset="img/cat-food-desktop.png">
+              <source media="(min-width: 768px) and (min-resolution: 2dppx)" srcset="img/cat-food-tablet@2x.png">
+              <source media="(min-width: 768px)" srcset="img/cat-food-tablet.png">
               <img class="description__image" src="img/cat-food.png" srcset="img/cat-food2x.png" alt="Питание для котов.">
             </picture>
             <a class="description__choose-programm button" href="form.html">Подобрать программу</a>
@@ -158,14 +160,16 @@
           <div class="live-example__slider">
             <div class="live-example__wrapper-image">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/live-example-cat-before.png, img/live-example-cat-before@2x.png">
+                <source media="(min-width: 768px)" srcset="img/live-example-cat-before.png">
+                <source media="(min-width: 768px) and (min-resolution: 2dppx)" srcset="img/example-cat-before@2x.png">
                 <img class="live-example__image-before" src="img/live-example-cat-mobile-before.png" srcset="img/live-example-cat-mobile-before@2x.png" alt="Живой пример кота до.">
               </picture>
             </div>
 
             <div class="live-example__wrapper-image">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/live-example-cat-after.png, img/live-example-cat-after@2x.png">
+                <source media="(min-width: 768px)" srcset="img/live-example-cat-after.png">
+                <source media="(min-width: 768px) and (min-resolution: 2dppx)" srcset="img/live-example-cat-after@2x.png">
                 <img class="live-example__image-after" src="img/live-example-cat-mobile-after.png" srcset="img/live-example-cat-mobile-after@2x.png" alt="Живой пример кота после.">
               </picture>
             </div>
@@ -186,7 +190,7 @@
       </section>
     </main>
 
-    <footer class="page__footer footer">
+    <footer class="footer">
       <a class="footer__logo" href="">
         <img src="img/svg-images/logo-catenergy-title.svg" width="128" height="24" alt="Надпись Cat Energy.">
       </a>

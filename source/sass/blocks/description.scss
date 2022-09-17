@@ -7,7 +7,9 @@
 }
 
 .description__choose-programm {
-  margin: 0 auto;
+  margin: 4px auto 0 auto;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .description {
@@ -16,14 +18,14 @@
 }
 
 .description__wrapper {
-  height: 302px;
   flex-direction: column;
   display: flex;
+  height: 301px;
 }
 
 .description__title {
   color: $black;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -32,11 +34,12 @@
   margin: 0;
   padding: 27px 0 0 0;
   width: 250px;
+  word-break: break-all;
 }
 
 .description__slogan {
   color: $black;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -68,7 +71,7 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/description-cat@2x.png");
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
     }
   }
 
@@ -105,7 +108,7 @@
   .description__slogan {
     color: $black;
     text-align: left;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Tahoma", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -199,6 +202,7 @@
   .description__wrapper {
     margin-left: 190px;
     margin-top: -18px;
+    margin-bottom: 361px;
   }
 
   .description__image {

@@ -1,14 +1,14 @@
 .gift {
   background-image: url("../../img/catalog-cat.png");
   width: 280px;
-  height: 290px;
+  min-height: 290px;
   background-repeat: no-repeat;
   margin: 35px auto 35px auto;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/catalog-cat@2x.png");
     width: 280px;
-    height: 290px;
+    min-height: 290px;
     background-repeat: no-repeat;
     margin: 35px auto 35px auto;
     background-size: cover;
@@ -18,14 +18,14 @@
 .gift__wrapper {
   background-color: rgba($basic-green, 0.85);
   width: 280px;
-  height: 290px;
+  min-height: 290px;
   box-sizing: border-box;
-  padding: 59px 0 0 0;
+  padding: 59px 0 20px 0;
   margin-top: 55px;
 }
 
 .gift__title {
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -47,13 +47,13 @@
 @media (min-width: $tablet-width) {
   .gift {
     width: 707px;
-    height: 200px;
+    min-height: 200px;
     background-image: url("../../img/catalog-cat-tablet.png");
     margin-bottom: 79px;
 
     @media (min-resolution: 2dppx) {
       width: 707px;
-      height: 200px;
+      min-height: 200px;
       background-image: url("../../img/catalog-cat-tablet@2x.png");
       margin-bottom: 79px;
       background-size: cover;
@@ -63,8 +63,9 @@
   .gift__wrapper {
     display: flex;
     width: 707px;
-    height: 200px;
+    min-height: 200px;
     margin-top: 72px;
+    padding: 58px 0 0;
   }
 
   .gift__image {
@@ -73,7 +74,7 @@
 
   .gift__title {
     margin-right: 123px;
-    font-family: "Arial", sans-serif;
+    font-family: "Arial", "Tahoma", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -81,22 +82,20 @@
     align-items: center;
     color: #ffffff;
     width: 161px;
+    text-align: left;
+    margin-top: 14px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .gift {
-    display: flex;
     width: 245px;
-    height: auto;
     background-image: url("../../img/catalog-cat-desktop.png");
     box-sizing: border-box;
     margin: 50px auto 35px auto;
 
     @media (min-resolution: 2dppx) {
-      display: flex;
       width: 245px;
-      height: auto;
       background-image: url("../../img/catalog-cat-desktop@2x.png");
       box-sizing: border-box;
       margin: 50px auto 35px auto;
@@ -106,7 +105,7 @@
 
   .gift__wrapper {
     flex-direction: column;
-    height: 290px;
+    min-height: 290px;
     box-sizing: border-box;
     margin: 0;
     width: 245px;
@@ -114,5 +113,7 @@
 
   .gift__title {
     margin-right: 43px;
+    margin-top: 0;
+    text-align: center;
   }
 }

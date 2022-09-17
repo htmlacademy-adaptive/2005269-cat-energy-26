@@ -9,7 +9,7 @@
 }
 
 .contact-data__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -21,12 +21,12 @@
   padding-right: 14px;
   padding-left: 40px;
   margin-left: -20px;
-  margin-top: 4px;
+  margin-top: 0;
 }
 
 .contact-data__label {
   position: relative;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -41,7 +41,7 @@
 }
 
 .contact-data__label input[type="text"] {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -56,7 +56,7 @@
 }
 
 .contact-data__label input[type="tel"] {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -71,7 +71,7 @@
 }
 
 .contact-data__label input[type="email"] {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -144,6 +144,19 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contact-data__label input[type="email"] {
+    font-size: 20px;
+  }
+
+  .contact-data__label input[type="tel"] {
+    font-size: 20px;
+  }
+
+  .contact-data__input-text {
+    padding-left: 20px;
+    margin-right: 45px;
+  }
+
   .contact-data__title {
     font-size: 36px;
     line-height: 36px;
@@ -169,12 +182,22 @@
     font-size: 20px;
     line-height: 30px;
     width: 85px;
+    margin-right: 15px;
   }
 
   .contact-data__label-text-tel {
     font-size: 20px;
     line-height: 30px;
     width: 106px;
+    margin-right: 15px;
+  }
+
+  .contact-data__mail-svg {
+    right: 64px;
+  }
+
+  .contact-data__tel-svg {
+    right: 64px;
   }
 }
 
@@ -194,8 +217,21 @@
     margin-left: 110px;
   }
 
+  .contact-data__input-text {
+    padding-left: 15px;
+    margin-right: 2px;
+  }
+
   .contact-data__title {
     margin-left: 69px;
     margin-top: 10px;
+  }
+
+  .contact-data__mail-svg {
+    right: 21px;
+  }
+
+  .contact-data__tel-svg {
+    right: 21px;
   }
 }
