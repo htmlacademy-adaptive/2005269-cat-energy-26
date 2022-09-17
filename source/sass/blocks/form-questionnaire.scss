@@ -31,7 +31,7 @@
 }
 
 .form-questionnaire__name {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -70,13 +70,13 @@
 }
 
 .form-questionnaire__input-text {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Tahoma", sans-serif;
   font-weight: 400;
   border: 1px solid #e7e7e7;
   height: 46px;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 18px;
-  padding-left: 16px;
+  padding-left: 19px;
 
   &:hover {
     border: 1px solid $special-grey;
@@ -103,31 +103,21 @@
   }
 }
 
-.label-radio {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  color: $special_dark-grey-2;
-  text-transform: uppercase;
-}
-
-.name-text-appellation {
+.form-questionnaire__name-text-appellation {
   width: 39px;
   margin-right: 13px;
 }
 
-.name-text-weight {
+.form-questionnaire__name-text-weight {
   width: 105px;
 }
 
-.name-text-years {
+.form-questionnaire__name-text-years {
   width: 179px;
 }
 
 .form-questionnaire-text {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -156,8 +146,8 @@
     margin-left: -20px;
     border: 1px solid #d9d9d9;
     width: 97vw;
-    padding-top: 27px;
-    padding-left: 22px;
+    padding-top: 31px;
+    padding-left: 20px;
     padding-bottom: 21px;
   }
 }
@@ -203,15 +193,15 @@
     line-height: 30px;
   }
 
-  .name-text-appellation {
+  .form-questionnaire__name-text-appellation {
     width: 57px;
   }
 
-  .name-text-weight {
+  .form-questionnaire__name-text-weight {
     width: 121px;
   }
 
-  .name-text-years {
+  .form-questionnaire__name-text-years {
     width: 186px;
   }
 

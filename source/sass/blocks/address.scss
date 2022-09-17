@@ -22,7 +22,7 @@
 
 .address__title {
   color: $special-black;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -93,7 +93,6 @@
 
 @media (min-width: $desktop-width) {
   .address__background {
-    // display: none;
     width: 565px;
     height: 198px;
     display: flex;
@@ -105,6 +104,7 @@
     top: 91px;
     left: 110px;
     z-index: 3;
+    margin-top: 0;
   }
 
   .address__iframe {
@@ -112,8 +112,7 @@
   }
 
   .address__title {
-    // display: none;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Tahoma", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -125,8 +124,7 @@
   }
 
   .address__text {
-    // display: none;
-    font-family: "Arial", sans-serif;
+    font-family: "Arial", "Tahoma", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -134,23 +132,11 @@
     width: 155px;
     height: 79px;
     margin: 0;
-  }
-
-  .address__desktop-signature {
-    // width: 565px;
-    // height: 198px;
-    // display: flex;
-    // position: absolute;
-    // background-color: $white;
-    // padding: 62px 80px;
-    // box-sizing: border-box;
-    // justify-content: space-between;
-    // top: 91px;
-    // left: 110px;
+    text-align: left;
   }
 
   .address__title-desktop {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Tahoma", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -162,7 +148,7 @@
   }
 
   .address__text-desktop {
-    font-family: "Arial", sans-serif;
+    font-family: "Arial", "Tahoma", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -174,5 +160,6 @@
 
   .address__background--index {
     background-color: $white;
+    margin-top: 0;
   }
 }

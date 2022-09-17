@@ -1,6 +1,6 @@
 .live-example {
   background-color: $special-gray;
-  padding: 25px 0 40px 0;
+  padding: 28px 0 40px;
   position: relative;
 }
 
@@ -108,7 +108,7 @@
 }
 
 .live-example__counter {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -117,7 +117,7 @@
 }
 
 .live-example__expenses {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -176,7 +176,7 @@
   .live-example__title {
     font-size: 60px;
     line-height: 60px;
-    margin-top: 18px;
+    margin-top: 72px;
     margin-bottom: 63px;
   }
 
@@ -218,7 +218,6 @@
 
   .live-example__image-after {
     object-fit: cover;
-    // width: 280px;
     width: 479px;
     height: 512px;
     transform: translate(-50%, 0);
@@ -287,6 +286,7 @@
 @media (min-width: $desktop-width) {
   .live-example {
     display: flex;
+    padding-top: 82px;
   }
 
   .live-example__kg .live-example__legend {

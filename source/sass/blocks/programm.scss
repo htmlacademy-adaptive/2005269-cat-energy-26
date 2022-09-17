@@ -37,7 +37,7 @@
   position: relative;
   box-sizing: border-box;
   padding: 21px 33px 18px 18px;
-  margin-top: 20px;
+  margin-top: 24px;
   width: 280px;
   margin-right: auto;
   margin-left: auto;
@@ -55,7 +55,7 @@
 }
 
 .programm__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -68,7 +68,7 @@
 }
 
 .programm__catalog-button {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -179,7 +179,6 @@
 
   .programm-weight-loss {
     margin-right: 74px;
-    // margin-left: 110px;
     margin-top: 0;
     padding: 76px 10px 57px 52px;
 

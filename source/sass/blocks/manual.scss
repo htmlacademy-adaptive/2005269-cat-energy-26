@@ -19,7 +19,7 @@
 }
 
 .manual__title {
-  margin-top: 25px;
+  margin-top: 21px;
 }
 
 .manual__item {
@@ -30,11 +30,10 @@
   line-height: 18px;
   width: 279px;
   box-sizing: border-box;
-  // height: 60px;
   align-self: center;
 
   &:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
   }
 
   &:nth-child(1)::after {
@@ -92,7 +91,6 @@
   .manual__list {
     display: grid;
     grid-template-columns: 250px 250px;
-    // grid-template-rows: 240px 240px;
     gap: 133px 133px;
     counter-reset: manual-counter;
     width: auto;
@@ -110,14 +108,13 @@
     &:not(:last-child) {
       margin-bottom: 0;
     }
-    // height: 240px;
     padding: 0;
 
     &::before {
       top: -39px;
       counter-increment: manual-counter;
       position: absolute;
-      font-family: "Oswald", sans-serif;
+      font-family: "Oswald", "Tahoma", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 280px;
@@ -153,7 +150,6 @@
   .manual__text {
     margin-top: 111px;
     display: block;
-    // margin-bottom: 251px;
     width: 245px;
     font-size: 16px;
     line-height: 24px;

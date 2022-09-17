@@ -1,4 +1,4 @@
-.page__footer {
+.footer {
   background-color: $basic-gray;
   padding: 28px 20px 20px 20px;
 }
@@ -42,7 +42,7 @@
 }
 
 @media (max-width: 767px) {
-  .page__footer {
+  .footer {
     &::before {
       content: "";
       position: absolute;
@@ -58,7 +58,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page__footer {
+  .footer {
     display: flex;
     justify-content: center;
     padding: 56px 20px 56px 20px;
@@ -86,7 +86,7 @@
     margin-top: 0;
   }
 
-  .page__footer {
+  .footer {
     display: flex;
     justify-content: center;
     padding: 51px 20px 56px 20px;

@@ -1,16 +1,16 @@
 .selection__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   display: block;
-  margin-left: 20px;
+  // margin-left: 20px;
   margin-bottom: 35px;
 }
 
 .selection__subtitle {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -21,7 +21,7 @@
 
 @media (min-width: $tablet-width) {
   .selection__title {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Tahoma", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 60px;
