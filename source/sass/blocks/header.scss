@@ -66,6 +66,10 @@
   }
 }
 
+.header__toggle--no-js {
+  display: none;
+}
+
 
 @media (min-width: $tablet-width) {
   .header__toggle {
@@ -107,3 +111,4 @@
     margin-left: 90px;
   }
 }
+

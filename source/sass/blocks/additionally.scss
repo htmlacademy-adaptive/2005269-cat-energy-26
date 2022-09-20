@@ -79,6 +79,10 @@
   &:hover {
     border: 1px solid #bababa;
   }
+
+  &:focus {
+    border: 1px solid $black;
+  }
 }
 
 .additionally__label-checkbox input:checked + .additionally-control {

@@ -139,6 +139,10 @@
   &:hover {
     border: 1px solid #bababa;
   }
+
+  &:focus {
+    border: 1px solid $black;
+  }
 }
 
 @media (max-width: 767px) {

@@ -6,7 +6,7 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: $black;
+  color: $special-black;
   margin: 23px 0 8px 0;
 
   &::before {
@@ -18,10 +18,21 @@
   }
 }
 
+.show-all__button--additional {
+  background-color: $basic-gray;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+}
+
 .show-all__button {
   text-align: center;
   text-decoration: none;
-  color: #222222;
+  color: $special_dark-grey;
   display: block;
   padding: 10px 90px;
   box-sizing: border-box;
@@ -106,6 +117,7 @@
     width: 248px;
     padding: 10px 50px;
     margin: 0 auto;
+    color: $special_dark-grey-2;
   }
 }
 
