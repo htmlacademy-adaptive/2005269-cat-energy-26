@@ -6,6 +6,16 @@
   display: none;
 }
 
+.address__location--no-js {
+  position: absolute;
+  background: url("../../img/location.png");
+
+  @media (min-resolution: 2dppx) {
+    background: url("../../img/location.png@2x");
+    background-size: contain;
+  }
+}
+
 .address__background {
   background-color: $basic-gray;
   justify-content: space-between;
@@ -61,6 +71,15 @@
     margin-top: 20px;
   }
 
+  .address__location--no-js {
+    background: url("../../img/location-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/location-tablet@2x.png");
+      background-size: contain;
+    }
+  }
+
   .address__br-tablet {
     display: block;
   }
@@ -105,6 +124,15 @@
     left: 110px;
     z-index: 3;
     margin-top: 0;
+  }
+
+  .address__location--no-js {
+    background: url("../../img/location-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/location-desktop@2x.png");
+      background-size: contain;
+    }
   }
 
   .address__iframe {

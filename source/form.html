@@ -16,34 +16,37 @@
 
   <header class="page__header header">
     <div class="header__wrapper">
-    <div class="header__logo logo">
-      <a class="logo__image" href="index.html">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/svg-images/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/svg-images/logo-tablet.svg">
-          <img class="logo__litle" src="img/svg-images/logo-mobile.svg" alt="Логотип Cat Energy.">
-        </picture>
-      </a>
+      <div class="header__logo logo">
+        <a class="logo__image" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/svg-images/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/svg-images/logo-tablet.svg">
+            <img class="logo__litle" src="img/svg-images/logo-mobile.svg" alt="Логотип Cat Energy.">
+          </picture>
+        </a>
       <a class="logo__title" href="">
         <img src="img/svg-images/logo-catenergy-title.svg" width="101" height="18" alt="Надпись Cat Energy.">
       </a>
     </div>
     <button class="header__toggle header__toggle--opened header__toggle--no-js" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </div>
-    <nav class="header__nav nav nav-opened">
+    <nav class="header__nav nav nav--opened">
       <ul class="nav__list">
         <li class="nav__item">
           <a class="nav__link" href="index.html">
             Главная
-          </a></li>
+          </a>
+        </li>
         <li class="nav__item">
           <a class="nav__link" href="catalog.html">
             Каталог продукции
-          </a></li>
+          </a>
+        </li>
         <li class="nav__item">
           <a class="nav__link nav__link--active" href="form.html">
           Подбор программы
-          </a></li>
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -56,46 +59,46 @@
     </section>
 
     <form class="main__form" action="post">
-        <div class="form-questionnaire">
-          <div class="form-questionnaire__names">
-            <label class="form-questionnaire__name">
-              <span class="form-questionnaire__name-text form-questionnaire__name-text-appellation">ИМЯ:*</span>
-              <input class="form-questionnaire__input-text" type="text" placeholder="барсик">
-            </label>
+      <div class="form-questionnaire">
+        <div class="form-questionnaire__names">
+          <label class="form-questionnaire__name">
+            <span class="form-questionnaire__name-text form-questionnaire__name-text-appellation">ИМЯ:*</span>
+            <input class="form-questionnaire__input-text" type="text" placeholder="барсик">
+          </label>
 
-            <label class="form-questionnaire__name">
-              <span class="form-questionnaire__name-text form-questionnaire__name-text-weight">Вес (кг):*</span>
-              <input class="form-questionnaire__input-text" type="text" placeholder="7">
-            </label>
+          <label class="form-questionnaire__name">
+            <span class="form-questionnaire__name-text form-questionnaire__name-text-weight">Вес (кг):*</span>
+            <input class="form-questionnaire__input-text" type="text" placeholder="7">
+          </label>
 
-            <label class="form-questionnaire__name">
-              <span class="form-questionnaire__name-text form-questionnaire__name-text-years">Возраст (лет):</span>
-              <input class="form-questionnaire__input-text" type="text" placeholder="7">
-            </label>
-          </div>
-
-          <div class="form-questionnaire__choice">
-            <fieldset class="form-questionnaire__fieldset">
-            <label class="form-questionnaire__label-radio">
-              <input class="form-questionnaire__input-radio visually-hidden" name="form-questionnaire__input-radio" type="radio" checked>
-              <span class="form-questionnaire__control"></span>
-              <span class="form-questionnaire-text">похудение</span>
-            </label>
-
-            <label class="form-questionnaire__label-radio">
-              <input class="form-questionnaire__input-radio visually-hidden" name="form-questionnaire__input-radio" type="radio">
-              <span class="form-questionnaire__control"></span>
-              <span class="form-questionnaire-text">набор массы</span>
-            </label>
-
-            <label class="form-questionnaire__label-radio">
-              <input class="form-questionnaire__input-radio visually-hidden" name="form-questionnaire__input-radio" type="radio">
-              <span class="form-questionnaire__control"></span>
-              <span class="form-questionnaire-text">не знаю (нужен ваш совет)</span>
-            </label>
-            </fieldset>
-          </div>
+          <label class="form-questionnaire__name">
+            <span class="form-questionnaire__name-text form-questionnaire__name-text-years">Возраст (лет):</span>
+            <input class="form-questionnaire__input-text" type="text" placeholder="7">
+          </label>
         </div>
+
+        <div class="form-questionnaire__choice">
+          <fieldset class="form-questionnaire__fieldset">
+          <label class="form-questionnaire__label-radio">
+            <input class="form-questionnaire__input-radio visually-hidden" name="form-questionnaire__input-radio" type="radio" checked>
+            <span class="form-questionnaire__control"></span>
+            <span class="form-questionnaire-text">похудение</span>
+          </label>
+
+          <label class="form-questionnaire__label-radio">
+            <input class="form-questionnaire__input-radio visually-hidden" name="form-questionnaire__input-radio" type="radio">
+            <span class="form-questionnaire__control"></span>
+            <span class="form-questionnaire-text">набор массы</span>
+          </label>
+
+          <label class="form-questionnaire__label-radio">
+            <input class="form-questionnaire__input-radio visually-hidden" name="form-questionnaire__input-radio" type="radio">
+            <span class="form-questionnaire__control"></span>
+            <span class="form-questionnaire-text">не знаю (нужен ваш совет)</span>
+          </label>
+          </fieldset>
+        </div>
+      </div>
 
       <div class="contact-data">
         <div class="line-container">
@@ -119,7 +122,7 @@
         <div class="line-container">
           <h2 class="comment__title">Комментарий</h2>
         </div>
-          <textarea class="comment__text" id="comment__text">Расскажите обо всех повадках кота</textarea>
+        <textarea class="comment__text" id="comment__text">Расскажите обо всех повадках кота</textarea>
       </div>
 
       <div class="additionally">
@@ -127,30 +130,29 @@
           <h2 class="additionally__title">Дополнительно</h2>
         </div>
         <div class="additionally__wrapper">
-
           <div class="additionally__container-checkbox">
           <label class="additionally__label-checkbox">
             <input class="visually-hidden" type="checkbox" checked>
-            <span class="additionally-control"></span>
-            <span class="additionally-text">сахарозаменитель</span>
+            <span class="additionally__control"></span>
+            <span class="additionally__text">сахарозаменитель</span>
           </label>
 
           <label class="additionally__label-checkbox">
             <input class="visually-hidden" type="checkbox">
-            <span class="additionally-control"></span>
-            <span class="additionally-text">питьевая вода</span>
+            <span class="additionally__control"></span>
+            <span class="additionally__text">питьевая вода</span>
           </label>
 
           <label class="additionally__label-checkbox">
             <input class="visually-hidden" type="checkbox">
-            <span class="additionally-control"></span>
-            <span class="additionally-text">молоко</span>
+            <span class="additionally__control"></span>
+            <span class="additionally__text">молоко</span>
           </label>
 
           <label class="additionally__label-checkbox">
             <input class="visually-hidden" type="checkbox">
-            <span class="additionally-control"></span>
-            <span class="additionally-text">витамины</span>
+            <span class="additionally__control"></span>
+            <span class="additionally__text">витамины</span>
           </label>
         </div>
 
@@ -201,8 +203,8 @@
     <div class="footer__htmlacademy">
       <a class="footer__htmlacademy-title" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="footer__htmlacademy-text">HTML Academy</span>
-      <svg width="27" height="34" viewBox="0 0 27 34" xmlns="http://www.w3.org/2000/svg"><path class="footer__htmlacademy-svg" d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z" fill="#666"/></svg>
-    </a>
+        <svg width="27" height="34" viewBox="0 0 27 34" xmlns="http://www.w3.org/2000/svg"><path class="footer__htmlacademy-svg" d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z" fill="#666"/></svg>
+      </a>
     </div>
 
   </footer>

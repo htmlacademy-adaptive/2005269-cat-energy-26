@@ -7,7 +7,7 @@
   margin-top: 38px;
 }
 
-.additionally-text {
+.additionally__text {
   padding-left: 46px;
   padding-top: 5px;
   padding-bottom: 7px;
@@ -68,7 +68,7 @@
   }
 }
 
-.additionally-control {
+.additionally__control {
   width: 30px;
   height: 30px;
   border: 1px solid $special-grey;
@@ -85,7 +85,7 @@
   }
 }
 
-.additionally__label-checkbox input:checked + .additionally-control {
+.additionally__label-checkbox input:checked + .additionally__control {
   &::before {
     content: url("../../img/svg-images/checkmark.svg");
     position: absolute;
@@ -95,7 +95,7 @@
   }
 }
 
-.additionally__label-checkbox input:disabled + .additionally-control {
+.additionally__label-checkbox input:disabled + .additionally__control {
   opacity: 0.3;
 }
 
@@ -104,13 +104,13 @@
     display: inline-block;
   }
 
-  .additionally-control {
+  .additionally__control {
     width: 40px;
     height: 40px;
     left: -14px;
   }
 
-  .additionally__label-checkbox input:checked + .additionally-control {
+  .additionally__label-checkbox input:checked + .additionally__control {
     &::before {
       content: url("../../img/svg-images/checkmark.svg");
       position: absolute;
