@@ -21,7 +21,7 @@
 .description__wrapper {
   flex-direction: column;
   display: flex;
-  height: 301px;
+  // height: 301px;
 }
 
 .description__title {
@@ -212,7 +212,7 @@
   .description__wrapper {
     margin-left: 190px;
     margin-top: -18px;
-    margin-bottom: 361px;
+    margin-bottom: 268px;
   }
 
   .description__image {
@@ -223,5 +223,15 @@
     top: 10px;
     z-index: 2;
     margin-left: 367px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .description__wrapper {
+    margin-left: auto;
+    width: 1000px;
+    margin-top: -18px;
+    margin-bottom: 268px;
+    margin-right: auto;
   }
 }

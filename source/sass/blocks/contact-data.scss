@@ -235,3 +235,16 @@
     right: 21px;
   }
 }
+
+@media (min-width: 1441px) {
+  .contact-data__wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1222px;
+  }
+
+  .contact-data__title {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

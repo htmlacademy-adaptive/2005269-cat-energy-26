@@ -36,6 +36,16 @@
 }
 
 @media (max-width: 767px) {
+  .nav--opened-js {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 54px;
+    z-index: 3;
+    background-color: $white;
+    height: 215px;
+  }
+
   .nav--opened {
     display: block;
     width: 100%;
@@ -68,6 +78,8 @@
 
   .nav__list {
     display: flex;
+    flex-wrap: wrap;
+    width: 480px;
   }
 
   .nav__item:nth-child(1) {
@@ -98,7 +110,7 @@
         color: $basic-green;
         background-color: $basic-green;
         z-index: 3;
-        top: 32px;
+        bottom: -4px;
       }
     }
   }
@@ -147,7 +159,6 @@
       color: #ffffff;
       background-color: #ffffff;
       z-index: 3;
-      top: 32px;
     }
   }
 }

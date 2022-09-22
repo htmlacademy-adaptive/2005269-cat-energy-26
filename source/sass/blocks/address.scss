@@ -7,13 +7,20 @@
 }
 
 .address__location--no-js {
-  position: absolute;
+  display: block;
   background: url("../../img/location.png");
+  width: 320px;
+  height: 362px;
+  margin: 0 auto;
 
   @media (min-resolution: 2dppx) {
-    background: url("../../img/location.png@2x");
+    background: url("../../img/location@2x.png");
     background-size: contain;
   }
+}
+
+.address__location--no-js .address__location {
+  display: none;
 }
 
 .address__background {
@@ -71,8 +78,16 @@
     margin-top: 20px;
   }
 
+  .address__text-city {
+    display: block;
+    margin-top: 20px;
+  }
+
   .address__location--no-js {
     background: url("../../img/location-tablet.png");
+    margin: 0 auto;
+    width: 768px;
+    height: 400px;
 
     @media (min-resolution: 2dppx) {
       background: url("../../img/location-tablet@2x.png");
@@ -128,6 +143,9 @@
 
   .address__location--no-js {
     background: url("../../img/location-desktop.png");
+    margin: 0 auto;
+    width: 1440px;
+    height: 400px;
 
     @media (min-resolution: 2dppx) {
       background: url("../../img/location-desktop@2x.png");
@@ -189,5 +207,9 @@
   .address__background--index {
     background-color: $white;
     margin-top: 0;
+  }
+
+  .address {
+    width: 1440px;
   }
 }

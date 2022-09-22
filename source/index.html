@@ -52,9 +52,11 @@
             <img src="img/svg-images/logo-catenergy-title.svg" width="101" height="18" alt="Надпись Cat Energy.">
           </a>
         </div>
-      <!-- <button class="header__toggle header__toggle--opened" type="button"><span class="visually-hidden">Открыть меню</span></button> -->
+        <!-- header__toggle--no-js убирает кнопку, nav--opened открывает меню-->
+      <button class="header__toggle header__toggle--opened header__toggle--no-js" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
-      <nav class="header__nav nav nav--opened">
+      <!-- nav--opened-js для открытия меню вне потока, nav--opened для открытия меню в потоке -->
+      <nav class="header__nav nav nav--opened-js">
         <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link nav__link--active nav__link--white nav__link--white-active" href="index.html">
@@ -90,9 +92,7 @@
               <img class="description__image" src="img/cat-food.png" srcset="img/cat-food2x.png" alt="Питание для котов.">
             </picture>
             <a class="description__choose-programm button" href="form.html">Подобрать программу</a>
-            <div class="description__background">
-              <!-- <div class="description__background-image"></div> -->
-            </div>
+            <div class="description__background"></div>
           </div>
         </section>
 
@@ -163,15 +163,15 @@
           <div class="live-example__slider">
             <div class="live-example__wrapper-image">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/live-example-cat-before.png">
-                <source media="(min-width: 768px) and (min-resolution: 2dppx)" srcset="img/example-cat-before@2x.png">
+                <source media="(min-width: 768px)" src="img/live-example-cat-before.png">
+                <source media="and (min-width: 768px) and (min-resolution: 2dppx)" src="img/live-example-cat-before@2x.png">
                 <img class="live-example__image-before" src="img/live-example-cat-mobile-before.png" srcset="img/live-example-cat-mobile-before@2x.png" alt="Живой пример кота до.">
               </picture>
             </div>
             <div class="live-example__wrapper-image">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/live-example-cat-after.png">
-                <source media="(min-width: 768px) and (min-resolution: 2dppx)" srcset="img/live-example-cat-after@2x.png">
+                <source media="(min-width: 768px)" src="img/live-example-cat-after.png">
+                <source media="and (min-width: 768px) and (min-resolution: 2dppx)" src="img/live-example-cat-after@2x.png">
                 <img class="live-example__image-after" src="img/live-example-cat-mobile-after.png" srcset="img/live-example-cat-mobile-after@2x.png" alt="Живой пример кота после.">
               </picture>
             </div>
@@ -186,9 +186,10 @@
       <section class="address">
         <div class="address__background address__background--index">
           <h2 class="address__title">приглашаем<br> к сотрудничеству дилеров!</h2>
-          <p class="address__text">ул. Большая Конюшенная, д. 19/8<br><br class="address__br-tablet"> Санкт-Петербург</p>
+          <p class="address__text">ул. Большая Конюшенная, д. 19/8 <span class="address__text-city">Санкт-Петербург</span></p>
         </div>
-        <div class="address__location address__location--no-js" style="position: relative; overflow: hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size: 12px; position: absolute; top: 0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.322805%2C59.938691&utm_medium=mapframe&utm_source=maps&z=17.24" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс Карты</a><iframe class="address__iframe" src="https://yandex.ru/map-widget/v1/-/CCUReRxIOD" style="position: relative;"></iframe></div>
+        <div class="address__location--no-js"><div class="address__location" style="position: relative; overflow: hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size: 12px; position: absolute; top: 0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.322805%2C59.938691&utm_medium=mapframe&utm_source=maps&z=17.24" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс Карты</a><iframe class="address__iframe" src="https://yandex.ru/map-widget/v1/-/CCUReRxIOD" style="position: relative;"></iframe></div>
+        </div>
       </section>
     </main>
 

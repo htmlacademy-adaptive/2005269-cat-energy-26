@@ -119,8 +119,8 @@
   }
 
   &:nth-of-type(odd) .catalog__image {
-    width: 81px;
-    height: 85px;
+    width: 68px;
+    height: 77px;
     margin-top: 20px;
   }
 }
@@ -283,3 +283,12 @@
     margin-top: 57px;
   }
 }
+
+@media (min-width: 1441px) {
+  .catalog__title {
+    width: 431px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+

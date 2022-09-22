@@ -28,7 +28,7 @@
           <img src="img/svg-images/logo-catenergy-title.svg" width="101" height="18" alt="Надпись Cat Energy.">
         </a>
       </div>
-    <!-- <button class="header__toggle header__toggle--opened" type="button"><span class="visually-hidden">Открыть меню</span></button> -->
+    <button class="header__toggle header__toggle--opened header__toggle--no-js" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </div>
     <nav class="header__nav nav nav--opened">
       <ul class="nav__list" >
@@ -61,8 +61,8 @@
             <div class="catalog__left">
               <a href="cat-energy-500-chicken.html">
                 <picture>
-                  <source type="image/webp" srcset="img/cat-energy-500-chicken.webp">
-                  <img class="catalog__image" src="img/cat-energy-500-chicken.png" srcset="img/cat-energy-500-chicken@2x.png" alt="">
+                  <source media="(min-width: 768px)" srcset="img/cat-energy-500-chicken.png, img/cat-energy-500-chicken@2x.png 2x">
+                  <img class="catalog__image" src="img/cat-energy-500-chicken-mobile.png" srcset="img/cat-energy-500-chicken-mobile@2x.png" alt="">
                 </picture>
               </a>
             </div>
@@ -83,7 +83,10 @@
           <div class="catalog__all">
             <div class="catalog__left">
               <a href="cat-energy-1000-chicken.html">
-                <img class="catalog__image" src="img/cat-energy-1000-chicken.png" srcset="img/cat-energy-1000-chicken@2x.png" alt="">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/cat-energy-1000-chicken.png, img/cat-energy-1000-chicken@2x.png 2x">
+                  <img class="catalog__image" src="img/cat-energy-1000-chicken-mobile.png" srcset="img/cat-energy-1000-chicken-mobile@2x.png" alt="">
+                </picture>
               </a>
             </div>
             <div class="catalog__right">
@@ -103,7 +106,10 @@
           <div class="catalog__all">
             <div class="catalog__left">
               <a href="cat-energy-500-fish.html">
-                <img class="catalog__image" src="img/cat-energy-500-fish.png" srcset="img/cat-energy-500-fish@2x.png" alt="">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/cat-energy-500-fish.png, img/cat-energy-500-fish@2x.png 2x">
+                  <img class="catalog__image" src="img/cat-energy-500-fish-mobile.png" srcset="img/cat-energy-500-fish-mobile@2x.png" alt="">
+                </picture>
               </a>
             </div>
             <div class="catalog__right">
@@ -123,7 +129,10 @@
           <div class="catalog__all">
             <div class="catalog__left">
               <a href="cat-energy-1000-fish.html">
-                <img class="catalog__image" src="img/cat-energy-1000-fish.png" srcset="img/cat-energy-1000-fish@2x.png" alt="">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/cat-energy-1000-fish.png, img/cat-energy-1000-fish@2x.png 2x">
+                  <img class="catalog__image" src="img/cat-energy-1000-fish-mobile.png" srcset="img/cat-energy-1000-fish-mobile@2x.png" alt="">
+                </picture>
               </a>
             </div>
             <div class="catalog__right">
@@ -143,7 +152,10 @@
           <div class="catalog__all">
             <div class="catalog__left">
               <a href="cat-energy-500-buckwheat.html">
-                <img class="catalog__image" src="img/cat-energy-500-buckwheat.png" srcset="img/cat-energy-500-buckwheat@2x.png" alt="">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/cat-energy-500-buckwheat.png, img/cat-energy-500-buckwheat@2x.png 2x">
+                  <img class="catalog__image" src="img/cat-energy-500-buckwheat-mobile.png" srcset="img/cat-energy-500-buckwheat-mobile@2x.png" alt="">
+                </picture>
               </a>
             </div>
             <div class="catalog__right">
@@ -163,7 +175,10 @@
           <div class="catalog__all">
             <div class="catalog__left">
               <a href="cat-energy-1000-buckwheat.html">
-                <img class="catalog__image" src="img/cat-energy-1000-buckwheat.png" srcset="img/cat-energy-1000-buckwheat@2x.png" alt="">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/cat-energy-1000-buckwheat.png, img/cat-energy-1000-buckwheat@2x.png 2x">
+                  <img class="catalog__image" src="img/cat-energy-1000-buckwheat-mobile.png" srcset="img/cat-energy-1000-buckwheat-mobile@2x.png" alt="">
+                </picture>
               </a>
             </div>
             <div class="catalog__right">
@@ -183,7 +198,10 @@
           <div class="catalog__all">
             <div class="catalog__left">
               <a href="cat-energy-500-rice.html">
-                <img class="catalog__image" src="img/cat-energy-500-rice.png" srcset="img/cat-energy-500-rice@2x.png" alt="">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/cat-energy-500-rice.png, img/cat-energy-500-rice@2x.png 2x">
+                  <img class="catalog__image" src="img/cat-energy-500-rice-mobile.png" srcset="img/cat-energy-500-rice-mobile@2x.png" alt="">
+                </picture>
               </a>
             </div>
             <div class="catalog__right">
@@ -253,7 +271,6 @@
       </ul>
       <section class="gift">
         <div class="gift__wrapper">
-          <!-- <img class="gift__image" src="img/svg-images/icon-gift.svg" alt="Подарок"> -->
           <h2 class="gift__title">Закажите все<br> и получите чехол для кота в подарок!</h2>
         </div>
       </section>
@@ -263,13 +280,14 @@
     <section class="address">
       <div class="address__background">
         <h2 class="address__title">приглашаем<br> к сотрудничеству дилеров!</h2>
-        <p class="address__text">ул. Большая Конюшенная, д. 19/8<br><br class="address__br-tablet"> Санкт-Петербург</p>
+        <p class="address__text">ул. Большая Конюшенная, д. 19/8<span class="address__text-city">Санкт-Петербург</span></p>
       </div>
-      <div class="address__location" style="position: relative; overflow: hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size: 12px; position: absolute; top: 0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.322805%2C59.938691&utm_medium=mapframe&utm_source=maps&z=17.24" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс Карты</a><iframe class="address__iframe" src="https://yandex.ru/map-widget/v1/-/CCUReRxIOD" style="position: relative;"></iframe></div>
-      <div class="address__desktop-signature">
+      <div class="address__location--no-js"><div class="address__location" style="position: relative; overflow: hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size: 12px; position: absolute; top: 0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.322805%2C59.938691&utm_medium=mapframe&utm_source=maps&z=17.24" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс Карты</a><iframe class="address__iframe" src="https://yandex.ru/map-widget/v1/-/CCUReRxIOD" style="position: relative;"></iframe></div>
+      </div>
+      <!-- <div class="address__desktop-signature">
         <h2 class="address__title-desktop">приглашаем<br> к сотрудничеству дилеров!</h2>
         <p class="address__text-desktop">ул. Большая Конюшенная, д. 19/8 <br><br>Санкт-Петербург</p>
-      </div>
+      </div> -->
     </section>
   </main>
 
