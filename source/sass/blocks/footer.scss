@@ -49,6 +49,8 @@
   color: $special_dark-grey;
   display: flex;
   justify-content: space-between;
+  width: 200px;
+  margin: 0 auto;
 }
 
 @media (max-width: 767px) {
