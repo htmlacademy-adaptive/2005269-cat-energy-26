@@ -41,15 +41,6 @@
   }
 }
 
-.item-subtitle__text {
-  font-family: "Arial", "Tahoma", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  color: $special_dark-grey;
-}
-
 .catalog__table-row {
   font-family: "Arial", "Tahoma", sans-serif;
   font-style: normal;
@@ -68,6 +59,10 @@
     z-index: -1;
     left: 0;
   }
+}
+
+.catalog__table-row th {
+  font-weight: 400;
 }
 
 .catalog__item-title {
@@ -124,8 +119,8 @@
   }
 
   &:nth-of-type(odd) .catalog__image {
-    width: 81px;
-    height: 85px;
+    width: 68px;
+    height: 77px;
     margin-top: 20px;
   }
 }
@@ -288,3 +283,12 @@
     margin-top: 57px;
   }
 }
+
+@media (min-width: 1441px) {
+  .catalog__title {
+    width: 431px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+

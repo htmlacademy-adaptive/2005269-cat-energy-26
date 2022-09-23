@@ -2,18 +2,11 @@
   margin-left: 20px;
 }
 
-.page__main {
+.main {
   position: relative;
 }
 
-.selection__subtitle {
-  font-family: "Oswald", "Tahoma", sans-serif;
-  font-style: normal;
-  text-transform: uppercase;
-  color: $black;
-}
-
-.main-text {
+.main__text {
   font-family: "Arial", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -31,5 +24,13 @@
 @media (min-width: $desktop-width) {
   .main__selection {
     margin-left: 110px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .main__selection {
+    margin-left: auto;
+    margin-right: auto;
+    width: 433px;
   }
 }

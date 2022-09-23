@@ -139,6 +139,10 @@
   &:hover {
     border: 1px solid #bababa;
   }
+
+  &:focus {
+    border: 1px solid $black;
+  }
 }
 
 @media (max-width: 767px) {
@@ -240,5 +244,13 @@
   .form-questionnaire__names {
     margin-left: 12px;
     width: 617px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .form-questionnaire {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1248px;
   }
 }

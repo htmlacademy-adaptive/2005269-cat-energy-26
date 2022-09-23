@@ -6,6 +6,8 @@
   justify-content: center;
   margin-top: 52px;
   margin-bottom: 21px;
+  flex-wrap: wrap;
+  // width: 123px;
 }
 
 .socials__item:not(:last-child) {

@@ -177,11 +177,23 @@
     width: 138px;
   }
 
-  .additional-wrapper {
+  .additional-product__wrapper {
     display: flex;
   }
 
   .additional-product__value {
     margin-left: 58px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .additional-product__wrapper {
+    margin: 0 auto;
+    width: 1440px;
+  }
+
+  .additional-products__title {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

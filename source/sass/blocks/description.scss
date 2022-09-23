@@ -15,12 +15,13 @@
 .description {
   background-image: none;
   margin: 0;
+  position: relative;
 }
 
 .description__wrapper {
   flex-direction: column;
   display: flex;
-  height: 301px;
+  // height: 301px;
 }
 
 .description__title {
@@ -176,6 +177,15 @@
     left: 50%;
     top: -130px;
 
+    &::after {
+      content: "";
+      background-color: rgba($basic-green, 0.85);
+      width: 100%;
+      height: 694px;
+      position: absolute;
+      z-index: 0;
+    }
+
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/description-cat-desktop--full@2x.png");
       background-repeat: no-repeat;
@@ -188,11 +198,11 @@
     }
   }
 
-  .description__background-image {
-    background-color: rgba($basic-green, 0.85);
-    min-width: 720px;
-    height: 694px;
-  }
+  // .description__background-image {
+  //   background-color: rgba($basic-green, 0.85);
+  //   min-width: 720px;
+  //   height: 694px;
+  // }
 
   .description__title {
     width: 417px;
@@ -202,7 +212,7 @@
   .description__wrapper {
     margin-left: 190px;
     margin-top: -18px;
-    margin-bottom: 361px;
+    margin-bottom: 268px;
   }
 
   .description__image {
@@ -213,5 +223,15 @@
     top: 10px;
     z-index: 2;
     margin-left: 367px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .description__wrapper {
+    margin-left: auto;
+    width: 1000px;
+    margin-top: -18px;
+    margin-bottom: 268px;
+    margin-right: auto;
   }
 }
