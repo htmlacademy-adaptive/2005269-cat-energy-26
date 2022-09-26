@@ -10,7 +10,7 @@
 .footer__logo {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 56px;
   margin-top: 7px;
 
   &:hover {
@@ -24,7 +24,6 @@
 
 .footer__htmlacademy {
   font-size: 16px;
-  // display: flex;
   justify-content: space-between;
   margin-top: 39px;
   cursor: pointer;
@@ -49,7 +48,6 @@
   color: $special_dark-grey;
   display: flex;
   justify-content: space-between;
-  width: 200px;
   margin: 0 auto;
 }
 
@@ -61,7 +59,7 @@
       bottom: 137px;
       height: 1px;
       background-color: rgb(217, 217, 217);
-      width: 100vw;
+      width: 100%;
       z-index: 1;
       left: 0;
       box-shadow: 0 63px 0 0 rgb(217, 217, 217);
@@ -106,6 +104,6 @@
   .footer {
     display: flex;
     justify-content: center;
-    padding: 51px 20px 56px 20px;
+    padding: 60px 20px 56px 20px;
   }
 }

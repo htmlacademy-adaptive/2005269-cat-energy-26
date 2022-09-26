@@ -21,7 +21,6 @@
 .description__wrapper {
   flex-direction: column;
   display: flex;
-  // height: 301px;
 }
 
 .description__title {
@@ -60,14 +59,24 @@
   margin-left: auto;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   .description__wrapper {
-    background-color: rgba($basic-green, 0.85);
+    &::before {
+      background-color: rgba($basic-green, 0.85);
+      content: "";
+      width: 320px;
+      height: 302px;
+      position: absolute;
+      z-index: -2;
+    }
   }
 
   .description {
     background-image: url("../../img/description-cat.png");
     background-repeat: no-repeat;
+    width: 320px;
+    margin: 0 auto;
+    z-index: -3;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/description-cat@2x.png");
@@ -197,12 +206,6 @@
       background-size: cover;
     }
   }
-
-  // .description__background-image {
-  //   background-color: rgba($basic-green, 0.85);
-  //   min-width: 720px;
-  //   height: 694px;
-  // }
 
   .description__title {
     width: 417px;
