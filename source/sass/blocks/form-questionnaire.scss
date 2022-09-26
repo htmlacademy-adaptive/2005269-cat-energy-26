@@ -30,6 +30,16 @@
   }
 }
 
+.form-questionnaire__input-radio:focus + .form-questionnaire__control {
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  position: absolute;
+  top: -6px;
+  border-radius: 100%;
+  border: 1px solid $black;
+}
+
 .form-questionnaire__name {
   font-family: "Oswald", "Tahoma", sans-serif;
   font-style: normal;
@@ -157,6 +167,17 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form-questionnaire__input-radio:focus + .form-questionnaire__control {
+    width: 40px;
+    height: 40px;
+    left: -15px;
+    box-sizing: border-box;
+    position: absolute;
+    top: -6px;
+    border-radius: 100%;
+    border: 1px solid $black;
+  }
+
   .form-questionnaire__input-radio:checked + .form-questionnaire__control {
     &::before {
       position: absolute;

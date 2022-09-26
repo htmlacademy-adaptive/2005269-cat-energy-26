@@ -152,6 +152,7 @@
 @media (min-width: $tablet-width) {
   .live-example {
     background-color: $white;
+    padding-bottom: 0;
   }
 
   .live-example__counter {
@@ -273,12 +274,12 @@
       content: "";
       position: absolute;
       background-color: $special-gray;
-      width: 100vw;
-      height: 462px;
-      top: 618px;
+      width: 100%;
+      height: 461px;
+      top: 674px;
     }
 
-    margin-bottom: 47px;
+    margin-bottom: 100px;
     margin-top: 105px;
   }
 }
@@ -289,12 +290,31 @@
     padding-top: 82px;
   }
 
+  .live-example__slider {
+    &::before {
+      content: "";
+      left: 0;
+      position: absolute;
+      background-color: $special-gray;
+      width: 100%;
+      height: 462px;
+      top: 212px;
+      z-index: 0;
+    }
+
+    margin-left: 208px;
+    margin-bottom: 81px;
+    margin-top: -2px;
+  }
+
   .live-example__kg .live-example__legend {
     left: 13px;
+    background-color: $special-gray;
   }
 
   .live-example__days .live-example__legend {
     width: 129px;
+    background-color: $special-gray;
   }
 
   .live-example__image {
@@ -303,11 +323,13 @@
 
   .live-example__title {
     margin-top: -4px;
+    z-index: 1;
   }
 
   .live-example__wrapper {
     display: inline-block;
     padding-left: 110px;
+    z-index: 1;
   }
 
   .live-example__expenses {
@@ -324,15 +346,7 @@
     margin-bottom: 69px;
     width: 433px;
     margin-top: 147px;
-  }
-
-  .live-example__slider {
-    &::before {
-      display: none;
-    }
-    margin-left: 208px;
-    margin-bottom: 47px;
-    margin-top: -2px;
+    z-index: 1;
   }
 }
 
